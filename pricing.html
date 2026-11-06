@@ -322,6 +322,26 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
   .band__plate{width:100%}
   .tab{height:44px;font-size:19px}
 }
+
+/* ===== mobile menu ===== */
+.menu-btn{display:none;align-items:center;justify-content:center;width:48px;height:48px;border:0;border-radius:999px;background:var(--card);cursor:pointer;transition:transform 100ms ease-out,background-color 150ms ease}
+.menu-btn:active{transform:scale(.95)}
+.menu-btn span{position:relative;display:block;width:20px;height:2px;background:var(--ink);transition:background-color 150ms ease}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink);transition:transform 200ms var(--ease-out-quint)}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:860px){
+  .top{position:relative;flex-wrap:nowrap}
+  .menu-btn{display:inline-flex}
+  .nav{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:50;flex-direction:column;align-items:stretch;gap:0;background:var(--card);border-radius:20px;padding:10px;box-shadow:0 20px 40px -20px rgba(14,17,22,.35);opacity:0;transform:translateY(-8px);visibility:hidden;pointer-events:none;transition:opacity 200ms var(--ease-out-quint),transform 200ms var(--ease-out-quint),visibility 0s linear 200ms}
+  .nav.open{opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:opacity 200ms var(--ease-out-quint),transform 200ms var(--ease-out-quint),visibility 0s}
+  .nav a:not(.btn){padding:14px 16px;border-radius:12px;font-size:18px;color:var(--ink)}
+  .nav a:not(.btn):hover{background:var(--bg)}
+  .nav a:not(.btn)::after{display:none}
+  .nav .btn{margin-top:8px;min-height:52px}
+}
 </style>
 <style>
 .calc{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:28px;align-items:start;margin-top:44px}
@@ -367,7 +387,8 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
       </svg>
       <span><b>Iman</b> Bachat</span>
     </a>
-    <nav class="nav" aria-label="Main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
       <a href="index.html#services">Services</a><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="pricing.html" aria-current="page" style="color:#0E1116">Pricing</a><a href="index.html#faq">FAQ</a>
       <a class="btn btn--lime" href="https://cal.com/iman-bachat-0baopr/30min?user=iman-bachat-0baopr&amp;overlayCalendar=true" target="_blank" rel="noopener">Book a call</a>
     </nav>
@@ -415,7 +436,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
     {key:'service',t:'1. What do you need?',o:[['web','Website','Get found online'],['wa','WhatsApp AI','Automate replies + orders'],['both','Website + WhatsApp AI','Best results · save 10%']]},
     {key:'pages',t:'2. Number of pages',web:1,o:[['landing','Landing page'],['p3','3 pages'],['p5','5 pages'],['p5plus','5+ pages']]},
     {key:'langs',t:'3. Languages',o:[['l1','1 language','Arabic or English'],['l2','2 languages','Arabic + English'],['l3','3 languages','e.g. + French']]},
-    {key:'build',t:'4. Build type',web:1,o:[['wp','WordPress','Easy for you to edit yourself'],['code','Custom-coded','Faster and fully custom']]},
+    {key:'build',t:'4. Build type',web:1,o:[['wp','No-code','Easy for you to edit yourself'],['code','Custom-coded','Faster and fully custom']]},
     {key:'addons',multi:1,t:'5. Add-ons',o:[['seo','SEO setup','+$150'],['gbp','Google Business Profile','+$80'],['form','Booking / order form','+$120'],['store','Online store','+$600'],['dash','Client dashboard','+$400']]},
     {key:'wa',t:'6. WhatsApp AI level',wa:1,o:[['replies','Smart replies','FAQs, prices, opening hours'],['orders','Bookings / orders','Takes them and logs to a sheet'],['full','Full system','Everything + dashboard + reports']]},
     {key:'support',t:'7. Monthly support',o:[['none','None','I will manage it'],['basic','Basic','Hosting + small edits · $30/mo'],['full','Full','Edits + AI monitoring · $80/mo']]}
@@ -450,6 +471,15 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
     if(k==='addons')s.addons[v]=!s.addons[v];else s[k]=v;render();
     var again=form.querySelector('.opt[data-k="'+k+'"][data-v="'+v+'"]');if(again)again.focus()});
   render();
+})();
+</script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+function set(o){b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');n.classList.toggle('open',o)}
+b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true')});
+n.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.getAttribute('aria-expanded')==='true'){set(false);b.focus()}});
+document.addEventListener('click',function(e){if(!e.target.closest('.top'))set(false)});
 })();
 </script>
 </body>
