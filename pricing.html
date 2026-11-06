@@ -431,7 +431,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
 (function(){
   var PRICE={pages:{landing:400,p3:700,p5:1000,p5plus:1400},langs:{l1:1,l2:1.25,l3:1.45},build:{wp:1,code:1.3},anim:{none:0,light:100,medium:250,heavy:500},addons:{seo:150,gbp:80,form:120,store:600,dash:400},wa:{replies:350,orders:700,full:1200},support:{none:0,basic:30,full:80},bundle:.10,spread:1.25};
   var WEEKS={anim:{none:[0,0],light:[0,0],medium:[0,1],heavy:[1,2]},pages:{landing:[1,2],p3:[2,3],p5:[3,4],p5plus:[4,6]},wa:{replies:[1,2],orders:[2,3],full:[3,4]}};
-  var s={service:'both',pages:'p3',langs:'l2',build:'wp',anim:'light',wa:'orders',support:'basic',addons:{seo:true,gbp:true}};
+  var s={addons:{}};
   var G=[
     {key:'service',t:'1. What do you need?',o:[['web','Website','Get found online'],['wa','WhatsApp AI','Automate replies + orders'],['both','Website + WhatsApp AI','Best results · save 10%']]},
     {key:'pages',t:'2. Number of pages',web:1,o:[['landing','Landing page'],['p3','3 pages'],['p5','5 pages'],['p5plus','5+ pages']]},
@@ -454,19 +454,31 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
       h+='</div></fieldset>';
     });
     form.innerHTML=h;
+    var need=[];
+    if(!s.service)need.push('what you need');
+    if(s.service&&web){if(!s.pages)need.push('number of pages');if(!s.build)need.push('build type');if(!s.anim)need.push('animation level')}
+    if(s.service&&!s.langs)need.push('languages');
+    if(s.service&&wa&&!s.wa)need.push('WhatsApp AI level');
+    var rp=document.getElementById('r-price'),rb=document.getElementById('r-bundle'),rd=document.getElementById('r-del'),rm=document.getElementById('r-mo'),rs=document.getElementById('r-sum');
+    var mo=s.support?PRICE.support[s.support]:0;
+    if(need.length){
+      rp.textContent='—';rb.textContent='';rd.textContent='—';rm.textContent=mo?'$'+mo+'/mo':'—';
+      rs.textContent='Choose '+need.join(', ')+' to see your estimate.';
+      return;
+    }
     var total=0,a=0,b=0,names=[];
     if(web){total+=PRICE.pages[s.pages]*PRICE.langs[s.langs]*PRICE.build[s.build]+PRICE.anim[s.anim];a+=WEEKS.pages[s.pages][0]+WEEKS.anim[s.anim][0];b+=WEEKS.pages[s.pages][1]+WEEKS.anim[s.anim][1]}
     if(wa){total+=PRICE.wa[s.wa]*(web?1:PRICE.langs[s.langs]);a+=WEEKS.wa[s.wa][0];b+=WEEKS.wa[s.wa][1]}
     G.filter(function(x){return x.key==='addons'})[0].o.forEach(function(o){if(s.addons[o[0]]){total+=PRICE.addons[o[0]];names.push(o[1])}});
     var bundle=web&&wa;if(bundle){total*=1-PRICE.bundle;a=Math.max(a-1,1)}
     var r=function(n){return Math.round(n/50)*50},f=function(n){return '$'+n.toLocaleString('en-US')};
-    var rp=document.getElementById('r-price'),nv=f(r(total))+' – '+f(r(total*PRICE.spread));if(rp.textContent&&rp.textContent!==nv){rp.classList.remove('bump');void rp.offsetWidth;rp.classList.add('bump')}rp.textContent=nv;
-    document.getElementById('r-bundle').textContent=bundle?'Includes 10% bundle discount':'';
-    document.getElementById('r-del').textContent=a+'–'+b+' weeks';
-    var mo=PRICE.support[s.support];document.getElementById('r-mo').textContent=mo?'$'+mo+'/mo':'—';
+    var nv=f(r(total))+' – '+f(r(total*PRICE.spread));if(rp.textContent!==nv){rp.classList.remove('bump');void rp.offsetWidth;rp.classList.add('bump')}rp.textContent=nv;
+    rb.textContent=bundle?'Includes 10% bundle discount':'';
+    rd.textContent=a+'–'+b+' weeks';
+    rm.textContent=mo?'$'+mo+'/mo':'—';
     var lab=function(k){var g=G.filter(function(x){return x.key===k})[0];return g.o.filter(function(o){return o[0]===s[k]})[0][1]};
     var parts=[lab('service')];if(web){parts.push(lab('pages'),lab('build'),lab('anim')+' animation')}parts.push(lab('langs'));if(wa)parts.push('AI: '+lab('wa'));if(names.length)parts.push(names.join(', '));if(mo)parts.push(lab('support')+' support');
-    document.getElementById('r-sum').textContent=parts.join(' · ');
+    rs.textContent=parts.join(' · ');
   }
   form.addEventListener('click',function(e){var bt=e.target.closest('.opt');if(!bt)return;var k=bt.dataset.k,v=bt.dataset.v;
     if(k==='addons')s.addons[v]=!s.addons[v];else s[k]=v;render();
