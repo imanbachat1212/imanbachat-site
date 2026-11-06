@@ -429,14 +429,15 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
 </footer>
 <script>
 (function(){
-  var PRICE={pages:{landing:400,p3:700,p5:1000,p5plus:1400},langs:{l1:1,l2:1.25,l3:1.45},build:{wp:1,code:1.3},addons:{seo:150,gbp:80,form:120,store:600,dash:400},wa:{replies:350,orders:700,full:1200},support:{none:0,basic:30,full:80},bundle:.10,spread:1.25};
-  var WEEKS={pages:{landing:[1,2],p3:[2,3],p5:[3,4],p5plus:[4,6]},wa:{replies:[1,2],orders:[2,3],full:[3,4]}};
-  var s={service:'both',pages:'p3',langs:'l2',build:'wp',wa:'orders',support:'basic',addons:{seo:true,gbp:true}};
+  var PRICE={pages:{landing:400,p3:700,p5:1000,p5plus:1400},langs:{l1:1,l2:1.25,l3:1.45},build:{wp:1,code:1.3},anim:{none:0,light:100,medium:250,heavy:500},addons:{seo:150,gbp:80,form:120,store:600,dash:400},wa:{replies:350,orders:700,full:1200},support:{none:0,basic:30,full:80},bundle:.10,spread:1.25};
+  var WEEKS={anim:{none:[0,0],light:[0,0],medium:[0,1],heavy:[1,2]},pages:{landing:[1,2],p3:[2,3],p5:[3,4],p5plus:[4,6]},wa:{replies:[1,2],orders:[2,3],full:[3,4]}};
+  var s={service:'both',pages:'p3',langs:'l2',build:'wp',anim:'light',wa:'orders',support:'basic',addons:{seo:true,gbp:true}};
   var G=[
     {key:'service',t:'1. What do you need?',o:[['web','Website','Get found online'],['wa','WhatsApp AI','Automate replies + orders'],['both','Website + WhatsApp AI','Best results · save 10%']]},
     {key:'pages',t:'2. Number of pages',web:1,o:[['landing','Landing page'],['p3','3 pages'],['p5','5 pages'],['p5plus','5+ pages']]},
     {key:'langs',t:'3. Languages',o:[['l1','1 language','Arabic or English'],['l2','2 languages','Arabic + English'],['l3','3 languages','e.g. + French']]},
     {key:'build',t:'4. Build type',web:1,o:[['wp','No-code','Easy for you to edit yourself'],['code','Custom-coded','Faster and fully custom']]},
+    {key:'anim',t:'Animation level',web:1,o:[['none','No animation'],['light','Light'],['medium','Medium'],['heavy','Heavy']]},
     {key:'addons',multi:1,t:'5. Add-ons',o:[['seo','SEO setup','+$150'],['gbp','Google Business Profile','+$80'],['form','Booking / order form','+$120'],['store','Online store','+$600'],['dash','Client dashboard','+$400']]},
     {key:'wa',t:'6. WhatsApp AI level',wa:1,o:[['replies','Smart replies','FAQs, prices, opening hours'],['orders','Bookings / orders','Takes them and logs to a sheet'],['full','Full system','Everything + dashboard + reports']]},
     {key:'support',t:'7. Monthly support',o:[['none','None','I will manage it'],['basic','Basic','Hosting + small edits · $30/mo'],['full','Full','Edits + AI monitoring · $80/mo']]}
@@ -449,14 +450,14 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
       if(g.web&&!web||g.wa&&!wa)return;
       n++;h+='<fieldset><legend>'+n+'. '+esc(g.t.replace(/^\d+\. /,''))+(g.multi?' <span>(pick any)</span>':'')+'</legend><div class="opts">';
       g.o.forEach(function(o){var on=g.multi?!!s.addons[o[0]]:s[g.key]===o[0];
-        h+='<button type="button" class="opt" data-k="'+g.key+'" data-v="'+o[0]+'" aria-pressed="'+on+'"><b>'+(g.multi?(on?'✓ ':'+ '):'')+esc(o[1])+'</b>'+(o[2]?'<small>'+esc(o[2])+'</small>':'')+'</button>'});
+        h+='<button type="button" class="opt" data-k="'+g.key+'" data-v="'+o[0]+'" aria-pressed="'+on+'"><b>'+(g.multi?(on?'✓ ':'+ '):'')+esc(o[1])+'</b>'+'</button>'});
       h+='</div></fieldset>';
     });
     form.innerHTML=h;
     var total=0,a=0,b=0,names=[];
-    if(web){total+=PRICE.pages[s.pages]*PRICE.langs[s.langs]*PRICE.build[s.build];a+=WEEKS.pages[s.pages][0];b+=WEEKS.pages[s.pages][1]}
+    if(web){total+=PRICE.pages[s.pages]*PRICE.langs[s.langs]*PRICE.build[s.build]+PRICE.anim[s.anim];a+=WEEKS.pages[s.pages][0]+WEEKS.anim[s.anim][0];b+=WEEKS.pages[s.pages][1]+WEEKS.anim[s.anim][1]}
     if(wa){total+=PRICE.wa[s.wa]*(web?1:PRICE.langs[s.langs]);a+=WEEKS.wa[s.wa][0];b+=WEEKS.wa[s.wa][1]}
-    G[4].o.forEach(function(o){if(s.addons[o[0]]){total+=PRICE.addons[o[0]];names.push(o[1])}});
+    G.filter(function(x){return x.key==='addons'})[0].o.forEach(function(o){if(s.addons[o[0]]){total+=PRICE.addons[o[0]];names.push(o[1])}});
     var bundle=web&&wa;if(bundle){total*=1-PRICE.bundle;a=Math.max(a-1,1)}
     var r=function(n){return Math.round(n/50)*50},f=function(n){return '$'+n.toLocaleString('en-US')};
     var rp=document.getElementById('r-price'),nv=f(r(total))+' – '+f(r(total*PRICE.spread));if(rp.textContent&&rp.textContent!==nv){rp.classList.remove('bump');void rp.offsetWidth;rp.classList.add('bump')}rp.textContent=nv;
@@ -464,7 +465,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
     document.getElementById('r-del').textContent=a+'–'+b+' weeks';
     var mo=PRICE.support[s.support];document.getElementById('r-mo').textContent=mo?'$'+mo+'/mo':'—';
     var lab=function(k){var g=G.filter(function(x){return x.key===k})[0];return g.o.filter(function(o){return o[0]===s[k]})[0][1]};
-    var parts=[lab('service')];if(web){parts.push(lab('pages'),lab('build'))}parts.push(lab('langs'));if(wa)parts.push('AI: '+lab('wa'));if(names.length)parts.push(names.join(', '));if(mo)parts.push(lab('support')+' support');
+    var parts=[lab('service')];if(web){parts.push(lab('pages'),lab('build'),lab('anim')+' animation')}parts.push(lab('langs'));if(wa)parts.push('AI: '+lab('wa'));if(names.length)parts.push(names.join(', '));if(mo)parts.push(lab('support')+' support');
     document.getElementById('r-sum').textContent=parts.join(' · ');
   }
   form.addEventListener('click',function(e){var bt=e.target.closest('.opt');if(!bt)return;var k=bt.dataset.k,v=bt.dataset.v;
