@@ -173,6 +173,17 @@ p{margin:0}
 @keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .faq details{transition:box-shadow 150ms ease}
 .faq details:hover{box-shadow:0 6px 16px rgba(14,17,22,.06)}
+/* ===== testimonials ===== */
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:44px}
+.quote{background:var(--card);border-radius:var(--r);padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:24px;margin:0;transition:transform 200ms var(--ease-out-quint),box-shadow 200ms var(--ease-out-quint)}
+.quote:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(14,17,22,.08)}
+.quote__mark{width:44px;height:44px;border-radius:50%;background:var(--lime);display:grid;place-items:center;flex:none}
+.quote blockquote{margin:0;font-size:clamp(18px,1.6vw,21px);line-height:1.5;letter-spacing:-0.01em}
+.quote figcaption{margin-top:auto;display:flex;flex-direction:column;gap:2px}
+.quote figcaption b{font-size:var(--s2)}
+.quote figcaption span{font-size:var(--s1);color:var(--soft)}
+.quote figcaption a{font-size:var(--s1);font-weight:700;color:var(--deep);margin-top:6px;width:fit-content}
+@media (max-width:860px){.quotes{grid-template-columns:1fr}}
 /* ===== clients strip ===== */
 .clients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;background:var(--card);border-radius:var(--r);padding:26px 32px}
 .clients p{color:var(--soft);font-weight:500}
@@ -547,6 +558,26 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
       </div>
     </div>
   </article>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="c sec" id="testimonials" aria-labelledby="quotes-h">
+  <div class="svc__top">
+    <h2 id="quotes-h" class="h2 rise">What clients say</h2>
+    <p class="sub rise d1">In their own words, after launch.</p>
+  </div>
+  <div class="quotes">
+    <figure class="quote rise">
+      <span class="quote__mark" aria-hidden="true"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M0 16V9.5C0 4.3 2.6 1.2 7.8 0l1 2.2C6 3.1 4.6 4.8 4.4 7.4H8V16H0zm11.5 0V9.5c0-5.2 2.6-8.3 7.8-9.5l1 2.2c-2.8.9-4.2 2.6-4.4 5.2h3.6V16h-8z" fill="#0E1116"/></svg></span>
+      <blockquote>“I had such a great experience working with Iman Bachat. She created my website for Instagram and I’m so happy with the result! She was professional, patient, and really understood my vision. The design looks amazing and very easy to use. Highly recommend her services to anyone looking to grow their business online!”</blockquote>
+      <figcaption><b>Kings Entertainment Group</b><span>Sydney, Australia</span><a href="https://kingsentertainmentgroup.com.au/" target="_blank" rel="noopener">See their site</a></figcaption>
+    </figure>
+    <figure class="quote rise d1">
+      <span class="quote__mark" aria-hidden="true"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M0 16V9.5C0 4.3 2.6 1.2 7.8 0l1 2.2C6 3.1 4.6 4.8 4.4 7.4H8V16H0zm11.5 0V9.5c0-5.2 2.6-8.3 7.8-9.5l1 2.2c-2.8.9-4.2 2.6-4.4 5.2h3.6V16h-8z" fill="#0E1116"/></svg></span>
+      <blockquote>“Thank you so much Iman! The website looks really great and I could not do it without your expertise, flexibility, and professionalism ❤️”</blockquote>
+      <figcaption><b>Farah Salhab</b><span>Gender &amp; Inclusion Strategist · Beirut, Lebanon &amp; International</span><a href="https://farahsalhab.netlify.app/" target="_blank" rel="noopener">See her site</a></figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- ============ 4. ABOUT ============ -->
