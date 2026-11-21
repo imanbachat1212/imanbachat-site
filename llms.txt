@@ -1,0 +1,29 @@
+# Iman Bachat
+
+> Full-stack web developer based in Tripoli, Lebanon. I build websites that bring small businesses clients, and the WhatsApp AI behind them that answers customers, takes bookings and orders, and logs every detail automatically. I work with clients in Lebanon, the United Arab Emirates, Australia and Canada, in Arabic and English.
+
+## Services
+- Website design and development: landing pages and business websites built to turn visitors into inquiries, in Arabic and English (no-code or custom-coded).
+- SEO and Google Business Profile: so local customers find the business on Google Search and Maps.
+- WhatsApp AI chatbot: an AI assistant on the business's own WhatsApp number that answers questions, takes bookings and orders, confirms them, and hands unclear messages to a person.
+- Dashboards and automation: order, booking and client dashboards that remove manual data entry.
+- Monthly support: hosting, small edits and monitoring of the AI after launch.
+
+## Who it is for
+Clinics, law offices, consultants, restaurants, delivery businesses, shops and other service businesses that get clients through inquiries, bookings or orders.
+
+## Selected work
+- 360 Services (delivery company, Lebanon): WhatsApp AI that reads orders from a busy WhatsApp group and logs area, items and payment automatically; 80–90% of manual order handling automated.
+- Kings Entertainment Group (Sydney, Australia): website with reservation form, SEO and Google Business Profile for a Lebanese Zaffe and Dabke performance group.
+- Ichrakieh Law Office (Tripoli, Lebanon): bilingual Arabic/English website for a law office established in 1965.
+- Farah Salhab (gender and inclusion consultant, MENA): personal brand website redesign with SEO.
+
+## Background
+Before freelancing, Iman ran operations for a delivery company (HR, finance, orders and the call center). Master's in Computer & Communication Engineering, Lebanese International University. 4+ years of experience, 15+ projects delivered.
+
+## Links
+- Website: https://imanbachat.com/
+- Price calculator: https://imanbachat.com/pricing
+- Book a free 30-minute call: https://cal.com/iman-bachat-0baopr/30min
+- Instagram: https://www.instagram.com/imanbachatt
+- LinkedIn: https://www.linkedin.com/in/iman-bachat

@@ -3,8 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pricing — Iman Bachat</title>
-<meta name="description" content="I'm Iman, a developer in Tripoli, Lebanon. I build websites that bring you clients, and the WhatsApp AI behind them that answers, books and logs every order.">
+<title>Website & WhatsApp AI price calculator — Iman Bachat</title>
+<meta name="description" content="Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.">
+<link rel="canonical" href="https://imanbachat.com/pricing">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iman Bachat">
+<meta property="og:title" content="Website & WhatsApp AI price calculator — Iman Bachat">
+<meta property="og:description" content="Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.">
+<meta property="og:url" content="https://imanbachat.com/pricing">
+<meta property="og:image" content="https://imanbachat.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Iman Bachat: websites that bring clients, WhatsApp AI that handles them">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website & WhatsApp AI price calculator — Iman Bachat">
+<meta name="twitter:description" content="Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.">
+<meta name="twitter:image" content="https://imanbachat.com/og-image.png">
+<meta name="author" content="Iman Bachat">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="alternate" type="text/plain" href="https://imanbachat.com/llms.txt" title="llms.txt">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -173,6 +191,8 @@ p{margin:0}
 @keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .faq details{transition:box-shadow 150ms ease}
 .faq details:hover{box-shadow:0 6px 16px rgba(14,17,22,.06)}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--on-ink);padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;transition:top 150ms ease}
+.skip:focus{top:12px}
 /* ===== clients strip ===== */
 .clients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;background:var(--card);border-radius:var(--r);padding:26px 32px}
 .clients p{color:var(--soft);font-weight:500}
@@ -375,8 +395,46 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
 .result__note{font-size:13px;color:#8A93A3}
 @media (max-width:1000px){.calc{grid-template-columns:1fr}.result{position:static}}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://imanbachat.com/pricing#page",
+   "url": "https://imanbachat.com/pricing",
+   "name": "Website & WhatsApp AI price calculator — Iman Bachat",
+   "description": "Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.",
+   "isPartOf": {
+    "@id": "https://imanbachat.com/#website"
+   },
+   "about": {
+    "@id": "https://imanbachat.com/#business"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://imanbachat.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Pricing",
+     "item": "https://imanbachat.com/pricing"
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#form">Skip to calculator</a>
 <header class="c">
   <div class="top">
     <a class="mark" href="index.html" aria-label="Iman Bachat, home">
@@ -417,7 +475,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
   <div class="c">
     <div class="foot__grid">
       <div>
-        <h2 class="h2">Talk soon.</h2>
+        <h2 class="h2">Talk soon. Let's build yours.</h2>
         <p>Whether it's your first website or the system behind one you already have, the first call is free.</p>
         <a class="btn btn--lime" href="https://cal.com/iman-bachat-0baopr/30min?user=iman-bachat-0baopr&amp;overlayCalendar=true" target="_blank" rel="noopener">Book a free call</a>
       </div>
@@ -427,7 +485,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
         <a href="https://www.linkedin.com/in/iman-bachat" target="_blank" rel="noopener">LinkedIn</a>
       </address>
     </div>
-    <div class="imprint"><span>© 2026 Iman Bachat · Tripoli, Lebanon</span><span>I build the website. Then I build the system behind it.</span></div>
+    <div class="imprint"><span>© 2026 Iman Bachat · Tripoli, Lebanon · <a href="/privacy" style="color:inherit">Privacy</a></span><span>I build the website. Then I build the system behind it.</span></div>
   </div>
   <p class="foot-name" aria-hidden="true">Iman Bachat</p>
 </footer>
