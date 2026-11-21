@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Website & WhatsApp AI price calculator — Iman Bachat</title>
-<meta name="description" content="Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.">
+<meta name="description" content="Instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons to see cost and timeline.">
 <link rel="canonical" href="https://imanbachat.com/pricing">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Iman Bachat">
 <meta property="og:title" content="Website & WhatsApp AI price calculator — Iman Bachat">
-<meta property="og:description" content="Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.">
+<meta property="og:description" content="Instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons to see cost and timeline.">
 <meta property="og:url" content="https://imanbachat.com/pricing">
 <meta property="og:image" content="https://imanbachat.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Website & WhatsApp AI price calculator — Iman Bachat">
-<meta name="twitter:description" content="Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.">
+<meta name="twitter:description" content="Instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons to see cost and timeline.">
 <meta name="twitter:image" content="https://imanbachat.com/og-image.png">
 <meta name="author" content="Iman Bachat">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -27,9 +27,15 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#F4F3EF">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/space-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/space-grotesk-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/space-grotesk-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/space-grotesk-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
+</style>
 <style>
 :root{
   --bg:#F4F3EF; --card:#FFFFFF; --sand:#EAE8E1; --line:#DDDAD2;
@@ -193,6 +199,10 @@ p{margin:0}
 .faq details:hover{box-shadow:0 6px 16px rgba(14,17,22,.06)}
 .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--on-ink);padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;transition:top 150ms ease}
 .skip:focus{top:12px}
+.how{margin-top:28px;background:#fff;border-radius:20px;padding:22px 26px;max-width:780px}
+.how__h{font-size:18px;letter-spacing:-0.01em;margin:0 0 10px}
+.how__list{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;color:var(--soft);font-size:16px}
+.how__list b{color:var(--ink);font-weight:500}
 /* ===== clients strip ===== */
 .clients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;background:var(--card);border-radius:var(--r);padding:26px 32px}
 .clients p{color:var(--soft);font-weight:500}
@@ -404,7 +414,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
    "@id": "https://imanbachat.com/pricing#page",
    "url": "https://imanbachat.com/pricing",
    "name": "Website & WhatsApp AI price calculator — Iman Bachat",
-   "description": "Get an instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.",
+   "description": "Instant price estimate for your website, WhatsApp AI chatbot or both. Pick pages, languages and add-ons and see the cost and timeline.",
    "isPartOf": {
     "@id": "https://imanbachat.com/#website"
    },
@@ -434,7 +444,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
 </script>
 </head>
 <body>
-<a class="skip" href="#form">Skip to calculator</a>
+<a class="skip" href="#main">Skip to content</a>
 <header class="c">
   <div class="top">
     <a class="mark" href="index.html" aria-label="Iman Bachat, home">
@@ -456,9 +466,19 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
     </nav>
   </div>
 </header>
-<main class="c" style="padding-block:40px 112px">
+<main id="main" class="c" style="padding-block:40px 112px">
   <h1 class="h2" style="font-size:clamp(36px,5vw,64px)">Estimate your project</h1>
   <p class="sub" style="margin-top:14px">Pick what you need and get an instant estimate. No email required.</p>
+  <section class="how" aria-labelledby="how-h">
+    <h2 id="how-h" class="how__h">How pricing works</h2>
+    <ul class="how__list">
+      <li><b>Websites</b> are priced by the number of pages, the build type (no-code or custom-coded), languages and animation level.</li>
+      <li><b>WhatsApp AI</b> is priced by what it handles: smart replies, bookings and orders, or a full system with a dashboard.</li>
+      <li><b>Website + WhatsApp AI together</b> get a 10% bundle discount.</li>
+      <li><b>Monthly support</b> is optional and covers hosting, small edits and keeping an eye on the AI.</li>
+      <li>The estimate is a range. Your exact price and timeline are confirmed after a free 30-minute call.</li>
+    </ul>
+  </section>
   <div class="calc">
     <div id="form"></div>
     <aside class="result" aria-live="polite">
