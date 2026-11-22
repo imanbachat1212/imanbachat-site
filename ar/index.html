@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iman Bachat — مواقع إلكترونية وذكاء اصطناعي على واتساب للأعمال الصغيرة</title>
+<meta name="description" content="مطوّرة مواقع في لبنان: مواقع تجلب لك العملاء، وذكاء اصطناعي على واتساب يردّ ويحجز ويسجّل كل طلب.">
+<link rel="canonical" href="https://imanbachat.com/ar/">
+<link rel="alternate" hreflang="en" href="https://imanbachat.com/">
+<link rel="alternate" hreflang="ar" href="https://imanbachat.com/ar/">
+<link rel="alternate" hreflang="x-default" href="https://imanbachat.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iman Bachat">
+<meta property="og:title" content="Iman Bachat — مواقع إلكترونية وذكاء اصطناعي على واتساب للأعمال الصغيرة">
+<meta property="og:description" content="مطوّرة مواقع في لبنان: مواقع تجلب لك العملاء، وذكاء اصطناعي على واتساب يردّ ويحجز ويسجّل كل طلب.">
+<meta property="og:url" content="https://imanbachat.com/ar/">
+<meta property="og:image" content="https://imanbachat.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Iman Bachat: مواقع تجلب العملاء، وذكاء اصطناعي على واتساب يتولّاهم">
+<meta property="og:locale" content="ar_LB">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Iman Bachat — مواقع إلكترونية وذكاء اصطناعي على واتساب للأعمال الصغيرة">
+<meta name="twitter:description" content="مطوّرة مواقع في لبنان: مواقع تجلب لك العملاء، وذكاء اصطناعي على واتساب يردّ ويحجز ويسجّل كل طلب.">
+<meta name="twitter:image" content="https://imanbachat.com/og-image.png">
+<meta name="author" content="Iman Bachat">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="alternate" type="text/plain" href="https://imanbachat.com/llms.txt" title="llms.txt">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#F4F3EF">
+<link rel="preload" href="/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/space-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/space-grotesk-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/space-grotesk-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/space-grotesk-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
+</style>
+<style>
+:root{
+  --bg:#F4F3EF; --card:#FFFFFF; --sand:#EAE8E1; --line:#DDDAD2;
+  --ink:#0E1116; --ink-2:#1A2029; --soft:#4A5260; --on-ink:#F4F3EF; --on-ink-soft:#B9C0CB;
+  --lime:#C6F432; --lime-2:#E4FA9E; --deep:#3B6E00;
+  --r:24px; --r-sm:14px;
+  --s1:15px; --s2:17px; --s3:22px; --s4:clamp(32px,3.6vw,52px); --s5:clamp(44px,5.6vw,84px);
+  --ease:cubic-bezier(.23,1,.32,1);
+  --ease-out-quint:cubic-bezier(.23,1,.32,1); --ease-in-out-cubic:cubic-bezier(.645,.045,.355,1); --ease-out-cubic:cubic-bezier(.33,1,.68,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;font-size:var(--s2);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-0.03em;line-height:1.04}
+p{margin:0}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--lime)}
+.c{max-width:1240px;margin-inline:auto;padding-inline:clamp(18px,3vw,32px)}
+.sec{padding-block:clamp(72px,9vw,128px)}
+.h2{font-size:var(--s4)}
+.sub{font-size:var(--s3);line-height:1.4;color:var(--soft);max-width:40ch}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;background:var(--ink);color:var(--on-ink);font:700 var(--s2)/1 'Space Grotesk',sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease),background-color .2s ease}
+.btn:hover{background:#262D37;transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.btn--lime{background:var(--lime);color:var(--ink)}
+.btn--lime:hover{background:#D6FF55}
+.btn--ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:var(--on-ink)}
+.link{font-weight:700;color:var(--deep);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+
+/* ===== header ===== */
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 28px;padding-block:20px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:22px;letter-spacing:-0.02em}
+.mark b{font-weight:700}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 26px}
+.nav a:not(.btn){text-decoration:none;font-weight:500;padding-block:12px;color:var(--soft)}
+.nav a:not(.btn):hover{color:var(--ink)}
+.nav .btn{min-height:46px;padding:0 22px}
+
+/* ===== hero ===== */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(32px,5vw,72px) clamp(64px,8vw,112px)}
+.hello{display:flex;align-items:center;gap:12px;font-size:var(--s3);font-weight:500}
+.hello svg{flex:none}
+.hero h1{font-size:clamp(40px,4.9vw,72px);margin-top:18px}
+.hero__lede{font-size:var(--s3);line-height:1.4;color:var(--soft);margin-top:24px;max-width:32ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.where{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.where span{background:var(--card);border-radius:999px;padding:8px 16px;font-size:var(--s1);font-weight:500}
+
+/* hero visual: a browser window behind a phone */
+.stage{position:relative;min-height:560px}
+.browser{position:absolute;top:0;right:0;width:86%;background:var(--card);border-radius:var(--r);overflow:hidden;transform:rotate(2.5deg);box-shadow:0 30px 60px -30px rgba(14,17,22,.35)}
+.browser__bar{display:flex;gap:6px;padding:12px 14px;background:var(--sand)}
+.browser__bar i{width:10px;height:10px;border-radius:50%;background:#C8C5BC;display:block}
+.browser img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.phone{position:absolute;left:0;bottom:0;width:min(330px,62%);background:var(--ink);border-radius:40px;padding:12px;box-shadow:0 40px 80px -30px rgba(14,17,22,.55)}
+.phone__screen{background:#0B141A;border-radius:30px;overflow:hidden;display:flex;flex-direction:column}
+.phone__head{display:flex;align-items:center;gap:10px;padding:14px 16px;background:#1F2C34;color:#E9EDEF}
+.phone__head b{display:block;font-size:var(--s1)}
+.phone__head small{display:block;font-size:13px;color:#C3CCD2}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--lime);display:grid;place-items:center;flex:none}
+.wa{padding:14px;display:flex;flex-direction:column;gap:10px;color:#E9EDEF;min-height:250px}
+.wa__msg{align-self:flex-start;max-width:88%;background:#202C33;padding:9px 11px 7px;font-size:14px;line-height:1.4;border-radius:12px 12px 12px 4px}
+.wa__bot{align-self:flex-end;background:#005C4B;border-radius:12px 12px 4px 12px}
+.wa__meta{display:block;text-align:right;font-size:12px;color:#D1D7DB;margin-top:3px}
+.logged{position:absolute;right:0;bottom:8%;width:min(320px,50%);background:var(--card);border-radius:var(--r-sm);padding:16px;box-shadow:0 30px 60px -28px rgba(14,17,22,.45);font-size:14px}
+.logged__top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 8px;margin-bottom:8px;font-weight:700}
+.log__status{white-space:nowrap}
+.log__status{display:inline-block;background:var(--lime);padding:3px 10px;border-radius:999px;font-weight:700;font-size:13px}
+.log table{width:100%;border-collapse:collapse}
+.log th{text-align:left;font-weight:500;color:var(--soft);padding:4px 10px 4px 0;vertical-align:top;width:36%}
+.log td{padding:4px 0;font-weight:500}
+.pick{margin-top:22px;max-width:470px;margin-left:auto}
+.pick p{font-weight:700;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--card);color:var(--ink);font:500 var(--s1)/1 'Space Grotesk',sans-serif;cursor:pointer;transition:background-color .2s ease,transform .25s var(--ease)}
+.chip:hover{background:var(--sand)}
+.chip:active{transform:scale(.96)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
+.pop{animation:pop .7s var(--ease) both}.pop2{animation:pop .7s var(--ease) .35s both}.pop3{animation:pop .7s var(--ease) .7s both}
+@keyframes pop{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+
+/* ===== hero: the IB logo, working ===== */
+.logo-demo{position:relative;display:grid;grid-template-columns:minmax(64px,.26fr) 1fr;grid-template-rows:auto auto;gap:12px;max-width:470px;margin-left:auto}
+.ib-switch{grid-row:1 / span 2;position:relative;background:var(--ink);border-radius:999px;overflow:hidden}
+.ib-knob{position:absolute;left:50%;width:clamp(40px,3.6vw,52px);aspect-ratio:1;border-radius:50%;background:var(--lime);transform:translateX(-50%);top:14px;z-index:1}
+.ib-on{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-weight:700;font-size:var(--s1);letter-spacing:.06em;color:var(--lime);z-index:1}
+.ib-page{position:relative;background:var(--ink);border-radius:22px;padding:8px;color:var(--ink)}
+.ib-page__bar{display:flex;align-items:center;gap:6px;padding:6px 8px 10px;color:#C3CCD2;font-size:13px}
+.ib-page__bar i{width:9px;height:9px;border-radius:50%;background:#3A424D;display:block}
+.ib-page__bar span{margin-left:8px}
+.ib-page__body{background:var(--card);border-radius:16px;padding:16px 18px 18px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.ib-page__name{font-weight:700;font-size:var(--s1);color:var(--soft)}
+.ib-page__h{font-size:clamp(19px,1.6vw,24px);font-weight:700;letter-spacing:-0.03em;line-height:1.1;max-width:16ch}
+.ib-page__btn{display:inline-flex;align-items:center;min-height:38px;padding:0 16px;border-radius:999px;background:var(--lime);font-weight:700;font-size:var(--s1);margin-top:6px}
+.ib-tap{position:absolute;width:28px;height:28px;border-radius:50%;background:rgba(14,17,22,.35);left:120px;bottom:30px;opacity:0;pointer-events:none}
+.ib-chat{position:relative;background:#0B141A;border-radius:26px 26px 26px 8px;color:#E9EDEF;display:flex;flex-direction:column;overflow:visible}
+.ib-chat__head{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#1F2C34;border-radius:26px 26px 0 0}
+.ib-chat__head b{display:block;font-size:var(--s1)}
+.ib-chat__head small{display:block;font-size:13px;color:#C3CCD2}
+.ib-chat__head .avatar{width:30px;height:30px}
+.ib-chat__body{padding:12px 14px 16px;display:flex;flex-direction:column;gap:8px;min-height:200px}
+.ib-tail{position:absolute;left:18px;bottom:-16px;width:30px;height:22px;background:#0B141A;clip-path:polygon(0 0,100% 0,0 100%)}
+.ib-typing{grid-area:1/1;justify-self:end;align-self:start;display:flex;gap:5px;background:#005C4B;border-radius:12px 12px 4px 12px;padding:12px 14px}
+.ib-typing i{width:7px;height:7px;border-radius:50%;background:#D1D7DB;display:block}
+.ib-logged{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--ink);border-radius:999px;padding:7px 14px 7px 8px;font-weight:700;font-size:14px;margin-top:4px}
+.m1,.m2,.m3,.m4{opacity:0}
+.ib-reply{display:grid}
+.ib-reply .wa__bot{grid-area:1/1;justify-self:end;max-width:88%}
+/* the sequence: switch on, page, tap, message, typing, reply, logged */
+.run .ib-knob{animation:knobUp .8s var(--ease) .2s both}
+.run .ib-on{animation:fade .4s ease .9s both}
+.run .ib-page{animation:popIn .6s var(--ease) .7s both}
+.run .ib-page__btn{animation:press .5s ease 1.6s both}
+.run .ib-tap{animation:tap .8s ease 1.4s both}
+.run .ib-chat{animation:popIn .6s var(--ease) 1.9s both}
+.run .m1{animation:msg .5s var(--ease) 2.4s both}
+.run .m2{animation:typing 1.3s ease 3s both}
+.run .m3{animation:msg .5s var(--ease) 4.2s both}
+.run .m4{animation:msg .5s var(--ease) 4.9s both}
+@keyframes fillUp{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes knobUp{from{top:calc(100% - 14px - clamp(40px,3.6vw,52px));background:#3A424D}to{top:14px;background:var(--lime)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes popIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes press{0%,100%{transform:none}40%{transform:scale(.92)}}
+@keyframes tap{0%{opacity:0;transform:scale(.4)}40%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.8)}}
+@keyframes msg{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes typing{0%{opacity:0}15%,80%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.m1,.m3,.m4{opacity:1}.m2{display:none}}
+@media (max-width:640px){.logo-demo{grid-template-columns:64px 1fr;min-height:0}.ib-page__body{min-height:0}}
+
+.ib-btn:hover{filter:brightness(0.95)}
+
+/* ===== micro-interactions (animate skill) ===== */
+.btn{transition:transform 150ms ease,background-color 150ms ease,box-shadow 150ms ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.97);transition-duration:100ms}
+.ib-btn{transition:transform 150ms ease,filter 150ms ease}
+.ib-btn:hover{transform:translateY(-2px)}
+.ib-btn:active{transform:scale(.97);transition-duration:100ms}
+.nav a:not(.btn){position:relative}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform 200ms var(--ease-out-quint)}
+.nav a:not(.btn):hover::after{transform:scaleX(1)}
+.svc-card{transition:transform 200ms var(--ease-out-quint),box-shadow 200ms var(--ease-out-quint)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(14,17,22,.12)}
+.folder{transition:transform 250ms var(--ease-out-quint)}
+.folder:hover{transform:translateY(-4px)}
+.band__pic img{transition:transform 300ms var(--ease-out-quint)!important}
+.chip{transition:background-color 150ms ease,color 150ms ease,transform 100ms ease-out!important}
+.faq summary span{transition:transform 200ms var(--ease-out-quint),background-color 150ms ease!important}
+.faq details[open] p{animation:faqIn 250ms var(--ease-out-quint) both}
+@keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq details{transition:box-shadow 150ms ease}
+.faq details:hover{box-shadow:0 6px 16px rgba(14,17,22,.06)}
+/* ===== testimonials ===== */
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:44px}
+.quote{background:var(--card);border-radius:var(--r);padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:24px;margin:0;transition:transform 200ms var(--ease-out-quint),box-shadow 200ms var(--ease-out-quint)}
+.quote:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(14,17,22,.08)}
+.quote__mark{width:44px;height:44px;border-radius:50%;background:var(--lime);display:grid;place-items:center;flex:none}
+.quote blockquote{margin:0;font-size:clamp(18px,1.6vw,21px);line-height:1.5;letter-spacing:-0.01em}
+.quote figcaption{margin-top:auto;display:flex;flex-direction:column;gap:2px}
+.quote figcaption b{font-size:var(--s2)}
+.quote figcaption span{font-size:var(--s1);color:var(--soft)}
+.quote figcaption a{font-size:var(--s1);font-weight:700;color:var(--deep);margin-top:6px;width:fit-content}
+@media (max-width:860px){.quotes{grid-template-columns:1fr}}
+@media (max-width:640px){.ui__sheet th:nth-child(3),.ui__sheet td:nth-child(3){display:none}.ui{font-size:12px}}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--on-ink);padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;transition:top 150ms ease}
+.skip:focus{top:12px}
+/* ===== clients strip ===== */
+.clients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;background:var(--card);border-radius:var(--r);padding:26px 32px}
+.clients p{color:var(--soft);font-weight:500}
+.clients ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 36px;font-size:var(--s3);font-weight:700;letter-spacing:-0.02em}
+
+/* ===== services ===== */
+.svc__top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:44px}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.panel{border-radius:var(--r);padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:22px;overflow:hidden}
+.panel--web{background:var(--card)}
+.panel--ai{background:var(--ink);color:var(--on-ink)}
+.panel h3{font-size:clamp(26px,2.6vw,36px)}
+.panel__lead{color:var(--soft)}
+.panel--ai .panel__lead{color:var(--on-ink-soft)}
+.ticks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks svg{flex:none;margin-top:4px}
+.panel__pic{margin-top:auto;border-radius:var(--r-sm);overflow:hidden;aspect-ratio:16/9;background:var(--sand)}
+.panel__pic img{width:100%;height:100%;object-fit:cover;object-position:top}
+.minichat{margin-top:auto;background:#0B141A;border-radius:var(--r-sm);padding:16px;display:flex;flex-direction:column;gap:9px;font-size:14px;color:#E9EDEF;aspect-ratio:16/9;justify-content:flex-end}
+.also{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:20px}
+.also b{margin-right:6px}
+.also span{background:var(--sand);border-radius:999px;padding:8px 16px;font-size:var(--s1);font-weight:500}
+
+/* ===== work: folders ===== */
+.work__top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:44px}
+.folder{margin-top:48px}
+.folder:first-of-type{margin-top:0}
+.tab{display:inline-flex;align-items:center;height:52px;padding:0 40px 0 24px;font-size:var(--s3);font-weight:700;letter-spacing:-0.02em;border-radius:var(--r-sm) 0 0 0;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 100%,0 100%);margin-bottom:-1px}
+.band{border-radius:0 var(--r) var(--r) var(--r);padding:clamp(22px,3vw,40px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.band__pic{border-radius:var(--r-sm);aspect-ratio:16/10;overflow:hidden;background:var(--ink)}
+.band__pic img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .8s var(--ease)}
+.folder:hover .band__pic img{transform:scale(1.03)}
+.band__text{display:flex;flex-direction:column;gap:16px}
+.band__text h3{font-size:clamp(28px,2.8vw,40px)}
+.band__cat{font-size:var(--s1);font-weight:500;color:var(--soft)}
+.band__result{font-size:var(--s3);font-weight:700;letter-spacing:-0.02em;line-height:1.25}
+.band__plate{border-radius:12px;overflow:hidden;aspect-ratio:16/8;width:70%}
+.band__plate img{width:100%;height:100%;object-fit:cover;object-position:top}
+.c1 .tab,.c1 .band{background:var(--lime)}
+.c2 .tab,.c2 .band{background:var(--card)}
+.c3 .tab,.c3 .band{background:var(--sand)}
+.c4 .tab,.c4 .band{background:#DCE1E8}
+.c1 .band__cat{color:#2E3A12}
+.ui{width:100%;height:100%;display:grid;grid-template-columns:1fr 1.25fr;font-size:14px;background:#0B141A}
+.ui__chat{padding:16px;display:flex;flex-direction:column;gap:9px;color:#E9EDEF}
+.ui__chat .ui__h{margin:0 0 4px;font-size:14px;font-weight:700}
+.ui__m{background:#202C33;padding:8px 10px;line-height:1.35;border-radius:10px}
+.ui__m small{display:block;color:#C3CCD2;font-size:13px;margin-top:2px}
+.ui__sheet{background:#fff;color:var(--ink);padding:14px;overflow:hidden}
+.ui__sheet .ui__h{margin:0 0 10px;font-size:14px;font-weight:700}
+.ui__sheet table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.ui__sheet th{background:#EEF0F2;text-align:left;font-weight:500;padding:6px;border:1px solid #DADDE1}
+.ui__sheet td{padding:6px;border:1px solid #DADDE1}
+.ui__ok{background:#E8F9B8;font-weight:700}
+
+/* ===== how we work ===== */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:44px;list-style:none;padding:0}
+.step{background:var(--card);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:12px}
+.step__n{width:44px;height:44px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font-weight:700}
+.step h3{font-size:var(--s3);letter-spacing:-0.02em}
+.step p{color:var(--soft);font-size:var(--s1)}
+
+/* ===== about ===== */
+.about{background:var(--ink);color:var(--on-ink);border-radius:32px;padding:clamp(28px,5vw,72px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.about__quote{font-size:clamp(22px,2.4vw,34px);font-weight:700;letter-spacing:-0.025em;line-height:1.18}
+.about__quote span{color:var(--lime)}
+.about__text{display:flex;flex-direction:column;gap:18px;margin-top:28px;color:var(--on-ink-soft);max-width:56ch}
+.about__sign{display:flex;align-items:center;gap:14px;margin-top:30px}
+.about__sign b{display:block;font-size:var(--s3);color:var(--on-ink)}
+.about__sign small{color:var(--on-ink-soft);font-size:var(--s1)}
+.nums{display:flex;flex-direction:column;gap:16px}
+.num{background:var(--ink-2);border-radius:var(--r);padding:26px}
+.num b{display:block;font-size:clamp(44px,4.6vw,68px);letter-spacing:-0.04em;line-height:1;color:var(--lime)}
+.num span{display:block;margin-top:8px;color:var(--on-ink-soft)}
+
+/* ===== pricing teaser ===== */
+.prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:44px}
+.price{background:var(--card);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:10px}
+.price--hi{background:var(--lime)}
+.price h3{font-size:var(--s3);letter-spacing:-0.02em}
+.price b{font-size:clamp(36px,3.4vw,52px);letter-spacing:-0.04em;line-height:1}
+.price p{color:var(--soft);font-size:var(--s1)}
+.price--hi p{color:#2E3A12}
+.prices__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:24px}
+.prices__foot p{color:var(--soft)}
+
+/* ===== book ===== */
+.book{background:var(--lime);border-radius:32px;padding:clamp(28px,5vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px)}
+.book h2{font-size:var(--s5)}
+.book__text{display:flex;flex-direction:column;gap:22px}
+.book__text p{font-size:var(--s3);line-height:1.4;max-width:30ch}
+.book__form{display:flex;flex-direction:column;gap:10px}
+.field{width:100%;min-height:56px;border:0;border-radius:var(--r-sm);background:#fff;color:var(--ink);font:500 var(--s2) 'Space Grotesk',sans-serif;padding:0 18px}
+.field::placeholder{color:#5B6372}
+select.field{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%230E1116' stroke-width='2'/%3E%3C/svg%3E");background-position:calc(100% - 20px) 50%;background-repeat:no-repeat}
+textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
+.book__form .btn{width:100%;min-height:58px;margin-top:4px}
+.cal{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;background:rgba(14,17,22,.08);border-radius:999px;padding:12px 20px;width:fit-content;transition:background-color .2s ease}
+.cal:hover{background:rgba(14,17,22,.16)}
+
+/* ===== faq ===== */
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(32px,5vw,72px);align-items:start}
+.faq__list{display:flex;flex-direction:column;gap:10px}
+.faq details{background:var(--card);border-radius:var(--r-sm);padding:4px 22px}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;font-weight:700;font-size:18px;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary span{flex:none;width:30px;height:30px;border-radius:50%;background:var(--sand);display:grid;place-items:center;transition:transform .3s var(--ease)}
+.faq details[open] summary span{transform:rotate(45deg);background:var(--lime)}
+.faq details p{padding:0 0 18px;color:var(--soft);max-width:60ch}
+
+/* ===== footer ===== */
+.foot{background:var(--ink);color:var(--on-ink);margin-top:clamp(72px,9vw,128px);padding-top:clamp(64px,8vw,104px);border-radius:32px 32px 0 0}
+.foot__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px}
+.foot__grid p{color:var(--on-ink-soft);margin-top:16px;max-width:36ch}
+.foot__grid .btn{margin-top:26px}
+.foot__links{display:flex;flex-direction:column;gap:12px;font-size:20px;font-weight:500;font-style:normal}
+.foot__links a{text-decoration:none;width:fit-content}
+.foot__links a:hover{color:var(--lime)}
+.imprint{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:64px;font-size:var(--s1);color:var(--on-ink-soft)}
+.foot-name{font-size:15.6vw;margin:0;font-weight:700;letter-spacing:-0.05em;line-height:.8;padding:40px 0 24px;white-space:nowrap;text-align:center}
+
+/* ===== motion ===== */
+@media (prefers-reduced-motion:no-preference){
+  .js .rise.pre{opacity:0;transform:translateY(20px)}
+  .js .rise{transition:opacity .5s var(--ease-out-quint),transform .5s var(--ease-out-quint)}
+  .js .rise.d1{transition-delay:.06s}.js .rise.d2{transition-delay:.12s}.js .rise.d3{transition-delay:.18s}
+  .js .clients li{transition:opacity .3s var(--ease-out-quint),transform .3s var(--ease-out-quint)}
+  .js .clients.pre li{opacity:0;transform:translateY(12px)}
+  .clients li:nth-child(2){transition-delay:.06s}.clients li:nth-child(3){transition-delay:.12s}.clients li:nth-child(4){transition-delay:.18s}
+  .in{animation:rise .6s var(--ease-out-quint) both}
+  .in.d1{animation-delay:.08s}.in.d2{animation-delay:.16s}.in.d3{animation-delay:.24s}.in.d4{animation-delay:.32s}
+}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ===== responsive ===== */
+@media (max-width:1000px){
+  .hero,.duo,.band,.about,.book,.faq,.foot__grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .prices{grid-template-columns:1fr}
+  .stage{min-height:560px;max-width:620px}
+}
+@media (max-width:640px){
+  .steps{grid-template-columns:1fr}
+  .hero__lede,.book__text p,.sub{font-size:19px}
+  .phone{margin-inline:auto}
+  .stage{min-height:0;display:flex;flex-direction:column;gap:16px}
+  .browser{display:none}
+  .phone,.logged{position:relative;left:auto;right:auto;bottom:auto;width:100%}
+  .phone{max-width:340px}
+  .clients{padding:22px}
+  .clients ul{gap:8px 24px;font-size:19px}
+  .band__plate{width:100%}
+  .tab{height:44px;font-size:19px}
+}
+
+/* ===== mobile menu ===== */
+.menu-btn{display:none;align-items:center;justify-content:center;width:48px;height:48px;border:0;border-radius:999px;background:var(--card);cursor:pointer;transition:transform 100ms ease-out,background-color 150ms ease}
+.menu-btn:active{transform:scale(.95)}
+.menu-btn span{position:relative;display:block;width:20px;height:2px;background:var(--ink);transition:background-color 150ms ease}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink);transition:transform 200ms var(--ease-out-quint)}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:860px){
+  .top{position:relative;flex-wrap:nowrap}
+  .menu-btn{display:inline-flex}
+  .nav{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:50;flex-direction:column;align-items:stretch;gap:0;background:var(--card);border-radius:20px;padding:10px;box-shadow:0 20px 40px -20px rgba(14,17,22,.35);opacity:0;transform:translateY(-8px);visibility:hidden;pointer-events:none;transition:opacity 200ms var(--ease-out-quint),transform 200ms var(--ease-out-quint),visibility 0s linear 200ms}
+  .nav.open{opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:opacity 200ms var(--ease-out-quint),transform 200ms var(--ease-out-quint),visibility 0s}
+  .nav a:not(.btn){padding:14px 16px;border-radius:12px;font-size:18px;color:var(--ink)}
+  .nav a:not(.btn):hover{background:var(--bg)}
+  .nav a:not(.btn)::after{display:none}
+  .nav .btn{margin-top:8px;min-height:52px}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://imanbachat.com/ar/#page",
+   "url": "https://imanbachat.com/ar/",
+   "name": "Iman Bachat — مواقع إلكترونية وذكاء اصطناعي على واتساب",
+   "inLanguage": "ar",
+   "isPartOf": {
+    "@id": "https://imanbachat.com/#website"
+   },
+   "about": {
+    "@id": "https://imanbachat.com/#business"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://imanbachat.com/ar/#faq",
+   "inLanguage": "ar",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "كم تكلفة الموقع الإلكتروني في لبنان؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "تعتمد على عدد الصفحات، ونوع البناء (بدون برمجة أو برمجة مخصّصة)، واللغات، ومستوى الحركة. تعطيك حاسبة الأسعار تقديرًا فوريًا، ويُثبَّت سعرك النهائي بعد مكالمة مجانية لمدة 30 دقيقة. ويحصل الموقع ومساعد واتساب الذكي معًا على خصم 10%."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "كم يستغرق بناء موقع إلكتروني؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "تستغرق صفحة الهبوط عادةً من أسبوع إلى أسبوعين، والموقع الكامل من أسبوعين إلى أربعة، ومساعد واتساب الذكي من أسبوعين إلى أربعة حسب ما يتولّاه. تعرف المدة قبل أن نبدأ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ماذا يمكن أن يقدّم مساعد واتساب الذكي لعملي؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "يردّ على زبائنك على واتساب ليلًا ونهارًا، ويستقبل الحجوزات والطلبات، ويسجّل كلًّا منها في جدول أو لوحة تحكم كي لا يضيع شيء. ويُجهَّز خصيصًا لعملك: مطعم، عيادة، مكتب محاماة، متجر أو خدمة."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل أحتاج موقعًا إلكترونيًا لأستخدم مساعد واتساب الذكي؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "لا، يعمل وحده. لكن الاثنين معًا يعطيان أفضل نتيجة: الموقع يجلب الناس، والمساعد الذكي يتولّاهم."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "كم تكلفة تشغيل مساعد واتساب الذكي؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "هناك تكاليف شهرية بسيطة للاستضافة ورسائل واتساب واستخدام الذكاء الاصطناعي. أشرحها لك في المكالمة قبل أن تلتزم."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل سيظهر موقعي على Google؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "كل موقع أبنيه سريع، ومتوافق مع الهاتف، ومجهّز بالأساسيات التي يبحث عنها Google. ويمكنني أيضًا إعداد ملفك التجاري على Google ليجدك الزبائن على خرائط Google."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل تبنين مواقع لأعمال خارج لبنان؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "نعم، لديّ عملاء في لبنان والإمارات وأستراليا وكندا. كل العمل يتمّ عن بُعد، والمكالمات في توقيتك."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "كيف أدفع ثمن الموقع؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "في لبنان عبر Whish Money أو OMT أو تحويل مصرفي، ومن الخارج عبر تحويل مصرفي أو Wise أو PayPal. يبدأ المشروع بدفعة مقدّمة 50%، ويُدفع الباقي قبل الإطلاق."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-sans-arabic-arabic-500-normal.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/ibm-plex-sans-arabic-arabic-700-normal.woff2) format('woff2')}
+html[dir=rtl] body,html[dir=rtl] .btn,html[dir=rtl] .chip,html[dir=rtl] .field,html[dir=rtl] .opt,html[dir=rtl] button{font-family:'Space Grotesk','IBM Plex Sans Arabic',system-ui,sans-serif}
+html[dir=rtl] *:not(.foot-name):not(.mark):not(.mark *){letter-spacing:0!important}
+html[dir=rtl] [style*="JetBrains"]{font-family:'IBM Plex Sans Arabic',sans-serif!important;font-size:14px!important;font-weight:700}
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{line-height:1.3!important}
+html[dir=rtl] .skip{left:auto;right:12px}
+html[dir=rtl] .nav a:not(.btn)::after{transform-origin:right}
+html[dir=rtl] .pick,html[dir=rtl] .logo-demo{margin-left:0;margin-right:auto}
+html[dir=rtl] .logo-demo{direction:ltr}
+html[dir=rtl] .ib-page__body,html[dir=rtl] .ib-chat__head>span,html[dir=rtl] .wa__msg,html[dir=rtl] .ib-logged span{direction:rtl}
+html[dir=rtl] .tab{padding:0 24px 0 40px;border-radius:0 var(--r-sm) 0 0;clip-path:polygon(24px 0,100% 0,100% 100%,0 100%)}
+html[dir=rtl] .band{border-radius:var(--r) 0 var(--r) var(--r)}
+html[dir=rtl] .ui__sheet th{text-align:right}
+html[dir=rtl] .how__list{padding-left:0;padding-right:20px}
+html[dir=rtl] .opt{text-align:right}
+html[dir=rtl] .result__price{direction:ltr;text-align:right}
+html[dir=rtl] blockquote[lang=en]{direction:ltr;text-align:left}
+.lang{font-weight:700!important;color:var(--ink)!important}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">انتقل إلى المحتوى</a>
+
+<header class="c">
+  <div class="top">
+    <a class="mark" href="#top" aria-label="Iman Bachat، الصفحة الرئيسية">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="2" y="4" width="10" height="32" rx="5" fill="#0E1116"></rect>
+        <circle cx="7" cy="10" r="3.5" fill="#C6F432"></circle>
+        <rect x="15" y="4" width="22" height="14" rx="3" fill="#0E1116"></rect>
+        <rect x="18" y="7.5" width="12" height="2.2" rx="1.1" fill="#F4F3EF"></rect>
+        <rect x="18" y="12" width="8" height="3.2" rx="1.6" fill="#C6F432"></rect>
+        <path d="M19 21h15a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4H22l-5 4v-4.5A4 4 0 0 1 15 30v-5a4 4 0 0 1 4-4z" fill="#0E1116"></path>
+        <circle cx="22" cy="27.5" r="1.5" fill="#F4F3EF"></circle><circle cx="26.5" cy="27.5" r="1.5" fill="#F4F3EF"></circle><circle cx="31" cy="27.5" r="1.5" fill="#F4F3EF"></circle>
+      </svg>
+      <span><b>Iman</b> Bachat</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="افتح القائمة"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="القائمة الرئيسية">
+      <a href="#services">الخدمات</a><a href="#work">أعمالي</a><a href="#about">من أنا</a><a href="#pricing">الأسعار</a><a href="#faq">الأسئلة الشائعة</a><a class="lang" href="/" lang="en" hreflang="en">EN</a>
+      <a class="btn btn--lime" href="#book">احجز مكالمة</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="c hero" aria-labelledby="hero-h">
+  <div>
+    <p class="hello in"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#C6F432"></circle><path d="M13 21c2.5 4 11.5 4 14 0" fill="none" stroke="#0E1116" stroke-width="2.6" stroke-linecap="round"></path><circle cx="15" cy="15.5" r="2" fill="#0E1116"></circle><circle cx="25" cy="15.5" r="2" fill="#0E1116"></circle></svg>مرحبًا، أنا إيمان.</p>
+    <h1 id="hero-h" class="in d1">مواقع إلكترونية تجلب لك العملاء.</h1>
+    <p class="hero__lede in d2">ثم أبني خلفها مساعد واتساب الذكي، فتُجاب كل رسالة، ويُؤكَّد كل حجز، ويُسجَّل كل طلب.</p>
+    <div class="hero__cta in d3">
+      <a class="btn btn--lime" href="/ar/pricing">احصل على تقدير مجاني</a>
+      <a class="btn btn--ghost" href="#work">شاهد أعمالي</a>
+    </div>
+    <div class="where in d4" aria-label="الخبرة">
+      <span>أكثر من 4 سنوات خبرة</span><span>أكثر من 15 مشروعًا منجزًا</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="logo-demo run in d2" id="logo-demo" aria-labelledby="pick-h">
+      <div class="ib-switch" aria-hidden="true"><span class="ib-knob"></span><span class="ib-on">ON</span></div>
+      <div class="ib-page" data-ui>
+        <div class="ib-page__bar"><i></i><i></i><i></i><span id="d-url">shawarmahouse.com</span></div>
+        <div class="ib-page__body">
+          <p class="ib-page__name" id="d-site">بيت الشاورما</p>
+          <p class="ib-page__h" id="d-head">شاورما ساخنة، توصيل في طرابلس.</p>
+          <span class="ib-page__btn" id="d-btn">اطلب عبر واتساب</span>
+        </div>
+        <span class="ib-tap" aria-hidden="true"></span>
+      </div>
+      <div class="ib-chat" data-ui aria-live="polite">
+        <div class="ib-chat__head"><span class="avatar" aria-hidden="true"></span><span><b id="d-name">بيت الشاورما</b><small>مساعد ذكي · متصل</small></span></div>
+        <div class="ib-chat__body">
+          <div class="wa__msg m1" id="d-in">2 شاورما و1 بطاطا إلى الميناء، قرب الصيدلية. الدفع نقدًا<span class="wa__meta">21:04</span></div>
+          <div class="ib-reply"><div class="ib-typing m2" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="wa__msg wa__bot m3" id="d-out">تمام! 2 شاورما + 1 بطاطا إلى الميناء، نقدًا. يصل خلال 30 دقيقة تقريبًا.<span class="wa__meta">21:04 <svg width="18" height="11" viewBox="0 0 18 11" role="img" aria-label="مقروءة"><path d="M1 6l3 3 6-7M7 9l1 1 7-8" fill="none" stroke="#53BDEB" stroke-width="1.6"></path></svg></span></div></div>
+          <p class="ib-logged m4"><svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#0E1116"></circle><path d="M5 9.5l2.5 2.5L13 6.5" fill="none" stroke="#C6F432" stroke-width="2"></path></svg><span id="d-log">تم التسجيل: 2× شاورما · الميناء · نقدًا</span></p>
+        </div>
+        <span class="ib-tail" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="pick in d3">
+      <p id="pick-h">اختر نوع العمل وشاهد كيف يُخدَم عميل جديد من البداية إلى النهاية.</p>
+      <div class="chips" role="group" aria-labelledby="pick-h">
+        <button class="chip" type="button" data-k="restaurant" aria-pressed="true">مطعم</button>
+        <button class="chip" type="button" data-k="clinic" aria-pressed="false">عيادة</button>
+        <button class="chip" type="button" data-k="law" aria-pressed="false">مكتب محاماة</button>
+        <button class="chip" type="button" data-k="shop" aria-pressed="false">متجر</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<section class="c" aria-label="العملاء">
+  <div class="clients rise">
+    <p>يثق بي أصحاب أعمال مثل</p>
+    <ul><li><bdi>360 Services</bdi></li><li>Kings Entertainment</li><li>Ichrakieh Law Office</li><li>Farah Salhab</li></ul>
+  </div>
+</section>
+
+<!-- ============ 2. SERVICES ============ -->
+<section id="services" style="max-width: 1240px; margin: 0 auto; padding: 112px clamp(18px, 3vw, 32px)">
+  <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #3B6E00; letter-spacing: 0.06em">الخدمات</div>
+  <h2 style="margin: 12px 0 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; max-width: 760px">معظم الأعمال لا تحتاج موقعًا أجمل، بل تحتاج عملاء أكثر وعملًا يدويًا أقل.</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 56px">
+    <div class="svc-card" style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E1116" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18"></path><path d="M8 14h5"></path></svg>
+      <h3 style="margin: 0; font-size: 21px">مواقع تحقّق النتائج</h3>
+      <p style="margin: 0; color: #4A5260; font-size: 16px">صفحات هبوط ومواقع أعمال مصمّمة لتحويل الزوار إلى استفسارات. بالعربية والإنجليزية.</p>
+    </div>
+    <div class="svc-card" style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E1116" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+      <h3 style="margin: 0; font-size: 21px">تحسين محركات البحث + ملف Google التجاري</h3>
+      <p style="margin: 0; color: #4A5260; font-size: 16px">ليجدك الناس القريبون منك عندما يبحثون عمّا تقدّمه، على بحث Google وخرائطه.</p>
+    </div>
+    <div class="svc-card" style="background: #0E1116; color: #F4F3EF; border: 1px solid #0E1116; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path><path d="M9 12h.01M12 12h.01M15 12h.01"></path></svg>
+      <h3 style="margin: 0; font-size: 21px">أتمتة واتساب بالذكاء الاصطناعي</h3>
+      <p style="margin: 0; color: #C9CED6; font-size: 16px">يردّ على الزبائن، ويستقبل الحجوزات والطلبات، ويسجّل كل شيء في جدول أو لوحة تحكم، على مدار الساعة.</p>
+    </div>
+    <div class="svc-card" style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E1116" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+      <h3 style="margin: 0; font-size: 21px">لوحات تحكم وأنظمة</h3>
+      <p style="margin: 0; color: #4A5260; font-size: 16px">شاهد طلباتك وعملاءك وأرقامك في مكان واحد، من دون نسخ أي شيء يدويًا.</p>
+    </div>
+  </div>
+  <div style="margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+    <span style="color: #4A5260">لست متأكدًا مما تحتاجه؟</span>
+    <a class="ib-btn" href="#book" style="background: #0E1116; color: #F4F3EF; text-decoration: none; font-weight: 600; padding: 14px 24px; border-radius: 999px">احجز مكالمة ←</a>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="c" id="work" aria-labelledby="work-h">
+  <div class="work__top">
+    <h2 id="work-h" class="h2 rise">أعمال مختارة</h2>
+    <p class="sub rise d1">أربعة أعمال حقيقية، وما الذي تغيّر لكل منها.</p>
+  </div>
+
+  <article class="folder c1 rise">
+    <div class="tab"><bdi>360 Services</bdi></div>
+    <div class="band">
+      <div class="band__pic" data-ui aria-label="بوت طلبات 360 Services: رسائل واتساب، والطلبات المسجّلة تلقائيًا">
+        <div class="ui">
+          <div class="ui__chat">
+            <p class="ui__h">طلبات <bdi>360 Services</bdi> · مجموعة</p>
+            <div class="ui__m">2 شاورما + بطاطا، الميناء قرب الصيدلية، نقدًا<small>زبون · 21:04</small></div>
+            <div class="ui__m">1 بيتزا مارغريتا كبيرة، ضم وفرز مبنى 4، Whish<small>زبون · 21:05</small></div>
+            <div class="ui__m">نفس طلب الأمس من فضلك، أبي سمرا<small>زبون · 21:07</small></div>
+          </div>
+          <div class="ui__sheet">
+            <p class="ui__h">سجل الطلبات</p>
+            <table>
+              <caption class="vh">طلبات تُسجَّل تلقائيًا من واتساب</caption>
+              <thead><tr><th>الوقت</th><th>المنطقة</th><th>الدفع</th><th>الحالة</th></tr></thead>
+              <tbody>
+                <tr><td>21:04</td><td>الميناء</td><td>نقدًا</td><td class="ui__ok">مسجّل</td></tr>
+                <tr><td>21:05</td><td>ضم وفرز</td><td>Whish</td><td class="ui__ok">مسجّل</td></tr>
+                <tr><td>21:07</td><td>أبي سمرا</td><td>نقدًا</td><td>للمراجعة</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="band__text">
+        <h3>لا طلبات ضائعة بعد اليوم</h3>
+        <p class="band__cat">شركة توصيل · ذكاء اصطناعي على واتساب</p>
+        <p class="band__result">أتمتة 80–90% من معالجة الطلبات اليدوية.</p>
+        <p>كانت الطلبات تصل إلى مجموعة واتساب مزدحمة، وكان مركز الاتصال ينسخ كل طلب يدويًا. بنيت ذكاءً اصطناعيًا يقرأ كل رسالة، ويسجّل الطلب مع المنطقة وطريقة الدفع، وينبّه موظفًا إلى أي طلب غير واضح.</p>
+        <p><a class="btn" href="#book">تريد هذا؟ احجز مكالمة</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="folder c2 rise">
+    <div class="tab">Kings Entertainment</div>
+    <div class="band">
+      <div class="band__pic"><img decoding="async" src="/img/kings-hero.webp" alt="الصفحة الرئيسية لموقع Kings Entertainment Group: موكب زفّة في حفل زفاف" width="1440" height="712"></div>
+      <div class="band__text">
+        <h3>حجوزات من الشاشة الأولى</h3>
+        <p class="band__cat">مناسبات · أستراليا</p>
+        <p>فرقة زفّة ودبكة لبنانية تحيي حفلات الزفاف في أنحاء أستراليا. يبدأ الموقع بالعرض ويضع نموذج الحجز على بُعد نقرة واحدة، مع تحسين لمحركات البحث وملف Google التجاري ليجدها العرسان.</p>
+        <div class="band__plate"><img loading="lazy" decoding="async" src="/img/kings-gallery.webp" alt="معرض المناسبات في موقع Kings" width="1140" height="602"></div>
+        <a class="link" href="https://kingsentertainmentgroup.com.au/" target="_blank" rel="noopener">زيارة موقع Kings Entertainment</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="folder c3 rise">
+    <div class="tab">Ichrakieh Law Office</div>
+    <div class="band">
+      <div class="band__pic"><img loading="lazy" decoding="async" src="/img/ramy-hero.webp" alt="الصفحة الرئيسية لمكتب Ichrakieh للمحاماة بالعربية" width="1440" height="712"></div>
+      <div class="band__text">
+        <h3>ثقة بلغتين</h3>
+        <p class="band__cat">محاماة · طرابلس</p>
+        <p>مكتب محاماة تأسّس عام 1965. العربية أولًا مع نسخة إنجليزية، ومجالات العمل معروضة بوضوح، وطريقة مباشرة لطلب استشارة عبر الهاتف أو واتساب.</p>
+        <a class="link" href="https://ramy-ichrakieh.netlify.app/" target="_blank" rel="noopener">زيارة موقع مكتب Ichrakieh للمحاماة</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="folder c4 rise">
+    <div class="tab">Farah Salhab</div>
+    <div class="band">
+      <div class="band__pic"><img loading="lazy" decoding="async" src="/img/farah-hero.webp" alt="الصفحة الرئيسية لموقع Farah Salhab: خبيرة في النوع الاجتماعي والشمول" width="1440" height="712"></div>
+      <div class="band__text">
+        <h3>علامة شخصية تجلب العمل</h3>
+        <p class="band__cat">استشارات · الشرق الأوسط وشمال أفريقيا</p>
+        <p>مستشارة في النوع الاجتماعي والشمول تعمل مع وكالات الأمم المتحدة. أعدت تصميم موقعها حول خبرتها وسجلّ إنجازاتها، مع تحسين محركات البحث لاسمها ومجالها. ولاحقًا وجدني عميل آخر من خلاله.</p>
+        <div class="band__plate"><img loading="lazy" decoding="async" src="/img/farah-about.webp" alt="قسم «من أنا» في موقع Farah Salhab" width="1260" height="572"></div>
+        <a class="link" href="https://farahsalhab.netlify.app/" target="_blank" rel="noopener">زيارة موقع Farah Salhab</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="c sec" id="testimonials" aria-labelledby="quotes-h">
+  <div class="svc__top">
+    <h2 id="quotes-h" class="h2 rise">ماذا يقول العملاء</h2>
+    <p class="sub rise d1">بكلماتهم كما كتبوها، بعد إطلاق مواقعهم.</p>
+  </div>
+  <div class="quotes">
+    <figure class="quote rise">
+      <span class="quote__mark" aria-hidden="true"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M0 16V9.5C0 4.3 2.6 1.2 7.8 0l1 2.2C6 3.1 4.6 4.8 4.4 7.4H8V16H0zm11.5 0V9.5c0-5.2 2.6-8.3 7.8-9.5l1 2.2c-2.8.9-4.2 2.6-4.4 5.2h3.6V16h-8z" fill="#0E1116"/></svg></span>
+      <blockquote lang="en">“I had such a great experience working with Iman Bachat. She created my website for Instagram and I’m so happy with the result! She was professional, patient, and really understood my vision. The design looks amazing and very easy to use. Highly recommend her services to anyone looking to grow their business online!”</blockquote>
+      <figcaption><b>Kings Entertainment Group</b><span>سيدني، أستراليا</span><a href="https://kingsentertainmentgroup.com.au/" target="_blank" rel="noopener">شاهد موقعهم</a></figcaption>
+    </figure>
+    <figure class="quote rise d1">
+      <span class="quote__mark" aria-hidden="true"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M0 16V9.5C0 4.3 2.6 1.2 7.8 0l1 2.2C6 3.1 4.6 4.8 4.4 7.4H8V16H0zm11.5 0V9.5c0-5.2 2.6-8.3 7.8-9.5l1 2.2c-2.8.9-4.2 2.6-4.4 5.2h3.6V16h-8z" fill="#0E1116"/></svg></span>
+      <blockquote lang="en">“Thank you so much Iman! The website looks really great and I could not do it without your expertise, flexibility, and professionalism ❤️”</blockquote>
+      <figcaption><b>Farah Salhab</b><span>استراتيجية في النوع الاجتماعي والشمول · بيروت، لبنان ودوليًا</span><a href="https://farahsalhab.netlify.app/" target="_blank" rel="noopener">شاهد موقعها</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 4. ABOUT ============ -->
+<section id="about" style="max-width: 1240px; margin: 0 auto; padding: 112px clamp(18px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 56px">
+  <div style="flex: 1 1 320px; min-width: 0">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #3B6E00; letter-spacing: 0.06em">من أنا</div>
+    <h2 style="margin: 12px 0 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">أبني الموقع، ثم أبني النظام الذي يقف خلفه.</h2>
+  </div>
+  <div style="flex: 1.3 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; font-size: 18px; color: #2A303A">
+    <p style="margin: 0">أنا إيمان، مطوّرة Full-stack ومُصمِّمة أنظمة أتمتة، مقيمة في لبنان وأعمل مع عملاء حول العالم.</p>
+    <p style="margin: 0">قبل العمل المستقل، أدرت العمليات في شركة توصيل: الموارد البشرية والمالية والطلبات ومركز الاتصال. لذلك لا أبني المواقع فقط، بل أفهم كيف يعمل العمل فعليًا خلفها، وأبني الأنظمة التي تجعله يسير بجهد أقل.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 500; margin-top: 6px">
+      <span style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 6px; padding: 6px 10px">التقاط العملاء المحتملين تلقائيًا</span>
+      <span style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 6px; padding: 6px 10px">أنظمة الحجز والطلبات على واتساب</span>
+      <span style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 6px; padding: 6px 10px">مواقع بالعربية والإنجليزية</span>
+      <span style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 6px; padding: 6px 10px">لوحات تحكم وتقارير</span>
+      <span style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 6px; padding: 6px 10px">الظهور على Google والخرائط</span>
+      <span style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 6px; padding: 6px 10px">ماجستير في هندسة الحاسوب والاتصالات</span>
+    </div>
+    <div style="margin-top: 12px">
+      <a class="ib-btn" href="#book" style="background: #0E1116; color: #F4F3EF; text-decoration: none; font-weight: 600; padding: 14px 24px; border-radius: 999px; display: inline-block">لنتحدث عن عملك ←</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. PRICING (teaser → Pricing page) ============ -->
+<section id="pricing" style="background: #E9E7E0; border-top: 1px solid #DDDAD2; border-bottom: 1px solid #DDDAD2">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 96px clamp(18px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+    <div style="flex: 1 1 480px; min-width: 0">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #3B6E00; letter-spacing: 0.06em">الأسعار</div>
+      <h2 style="margin: 12px 0 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">كم سيكلّف مشروعك؟</h2>
+      <p style="margin: 14px 0 0; color: #4A5260; max-width: 560px">اختر ما تحتاجه في حاسبة الأسعار واحصل على تقدير فوري. لا حاجة إلى بريد إلكتروني.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px">
+      <a class="ib-btn" href="/ar/pricing" style="background: #0E1116; color: #F4F3EF; text-decoration: none; font-weight: 600; padding: 16px 28px; border-radius: 999px">افتح حاسبة الأسعار ←</a>
+      <a href="#book" style="color: #0E1116; text-decoration: none; font-weight: 600; padding: 15px 27px; border-radius: 999px; border: 1.5px solid #0E1116">احجز مكالمة</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. BOOK A CALL ============ -->
+<section id="book" style="background: #0E1116; color: #F4F3EF">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 112px clamp(18px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+    <div style="flex: 1 1 380px; min-width: 0">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #C6F432; letter-spacing: 0.06em">احجز مكالمة</div>
+      <h2 style="margin: 12px 0 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">لنشرب قهوة (افتراضية) معًا</h2>
+      <p style="margin: 20px 0 0; color: #C9CED6; font-size: 18px">بناء موقع إلكتروني لا يجب أن يكون مرهقًا. احجز مكالمة فردية مجانية وأخبرني عن عملك. سأجيب عن أسئلتك حول التصميم والأتمتة والأسعار، ونرى إن كنا مناسبين لبعضنا. بلا ضغط، فقط نصيحة صادقة.</p>
+      <ol style="list-style: none; margin: 36px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
+        <li style="display: flex; gap: 14px; align-items: center"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #0E1116; background: #C6F432; border-radius: 999px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex: none">1</span>مكالمة مجانية (30 دقيقة)</li>
+        <li style="display: flex; gap: 14px; align-items: center"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #F4F3EF; border: 1px solid #3A414D; border-radius: 999px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex: none">2</span>خطة + عرض سعر ثابت</li>
+        <li style="display: flex; gap: 14px; align-items: center"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #F4F3EF; border: 1px solid #3A414D; border-radius: 999px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex: none">3</span>التنفيذ، مع تحديثات مستمرة</li>
+        <li style="display: flex; gap: 14px; align-items: center"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #F4F3EF; border: 1px solid #3A414D; border-radius: 999px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex: none">4</span>الإطلاق + الدعم</li>
+      </ol>
+    </div>
+    <div style="flex: 1 1 420px; min-width: 0; background: #161B22; border: 1px dashed #3A414D; border-radius: 24px; padding: 32px; min-height: 420px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; text-align: center">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
+      <div style="font-size: 22px; font-weight: 600">مكالمة مجانية لمدة 30 دقيقة</div>
+      <div style="font-size: 15px; color: #C9CED6; max-width: 320px">اختر الوقت الذي يناسبك، وستصلك دعوة في التقويم مع رابط المكالمة.</div>
+      <a class="ib-btn" href="https://cal.com/iman-bachat-0baopr/30min?user=iman-bachat-0baopr&amp;overlayCalendar=true" target="_blank" rel="noopener" style="background: #C6F432; color: #0E1116; text-decoration: none; font-weight: 600; padding: 16px 28px; border-radius: 999px">اختر موعدًا ←</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="c sec" id="faq" aria-labelledby="faq-h">
+  <div class="faq">
+    <div>
+      <h2 id="faq-h" class="h2 rise">أسئلة قد تخطر لك</h2>
+      <p class="sub rise d1" style="margin-top:18px">سؤال آخر؟ <a href="#book">اسألني في مكالمة مجانية</a>.</p>
+    </div>
+    <div class="faq__list rise d1">
+      <details open><summary>كم تكلفة الموقع الإلكتروني في لبنان؟<span aria-hidden="true">+</span></summary><p>تعتمد على عدد الصفحات، ونوع البناء (بدون برمجة أو برمجة مخصّصة)، واللغات، ومستوى الحركة. تعطيك <a href="/ar/pricing">حاسبة الأسعار</a> تقديرًا فوريًا، ويُثبَّت سعرك النهائي بعد مكالمة مجانية لمدة 30 دقيقة. ويحصل الموقع ومساعد واتساب الذكي معًا على خصم 10%.</p></details>
+      <details><summary>كم يستغرق بناء موقع إلكتروني؟<span aria-hidden="true">+</span></summary><p>تستغرق صفحة الهبوط عادةً من أسبوع إلى أسبوعين، والموقع الكامل من أسبوعين إلى أربعة، ومساعد واتساب الذكي من أسبوعين إلى أربعة حسب ما يتولّاه. تعرف المدة قبل أن نبدأ.</p></details>
+      <details><summary>ماذا يمكن أن يقدّم مساعد واتساب الذكي لعملي؟<span aria-hidden="true">+</span></summary><p>يردّ على زبائنك على واتساب ليلًا ونهارًا، ويستقبل الحجوزات والطلبات، ويسجّل كلًّا منها في جدول أو لوحة تحكم كي لا يضيع شيء. ويُجهَّز خصيصًا لعملك: مطعم، عيادة، مكتب محاماة، متجر أو خدمة.</p></details>
+      <details><summary>هل أحتاج موقعًا إلكترونيًا لأستخدم مساعد واتساب الذكي؟<span aria-hidden="true">+</span></summary><p>لا، يعمل وحده. لكن الاثنين معًا يعطيان أفضل نتيجة: الموقع يجلب الناس، والمساعد الذكي يتولّاهم.</p></details>
+      <details><summary>كم تكلفة تشغيل مساعد واتساب الذكي؟<span aria-hidden="true">+</span></summary><p>هناك تكاليف شهرية بسيطة للاستضافة ورسائل واتساب واستخدام الذكاء الاصطناعي. أشرحها لك في المكالمة قبل أن تلتزم.</p></details>
+      <details><summary>هل سيظهر موقعي على Google؟<span aria-hidden="true">+</span></summary><p>كل موقع أبنيه سريع، ومتوافق مع الهاتف، ومجهّز بالأساسيات التي يبحث عنها Google. ويمكنني أيضًا إعداد ملفك التجاري على Google ليجدك الزبائن على خرائط Google.</p></details>
+      <details><summary>هل تبنين مواقع لأعمال خارج لبنان؟<span aria-hidden="true">+</span></summary><p>نعم، لديّ عملاء في لبنان والإمارات وأستراليا وكندا. كل العمل يتمّ عن بُعد، والمكالمات في توقيتك.</p></details>
+      <details><summary>كيف أدفع ثمن الموقع؟<span aria-hidden="true">+</span></summary><p>في لبنان عبر Whish Money أو OMT أو تحويل مصرفي، ومن الخارج عبر تحويل مصرفي أو Wise أو PayPal. يبدأ المشروع بدفعة مقدّمة 50%، ويُدفع الباقي قبل الإطلاق.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="c">
+    <div class="foot__grid">
+      <div>
+        <h2 class="h2">إلى اللقاء قريبًا. لنبنِ موقعك.</h2>
+        <p>سواء كان أول موقع لك أو النظام خلف موقع لديك أصلًا، المكالمة الأولى مجانية.</p>
+        <a class="btn btn--lime" href="#book">احجز مكالمة مجانية</a>
+      </div>
+      <address class="foot__links">
+        <a href="mailto:iman.bachatt@gmail.com">iman.bachatt@gmail.com</a>
+        <a href="https://www.instagram.com/imanbachatt" target="_blank" rel="noopener">إنستغرام <bdi>@imanbachatt</bdi></a>
+        <a href="https://www.linkedin.com/in/iman-bachat" target="_blank" rel="noopener">لينكدإن</a>
+      </address>
+    </div>
+    <div class="imprint"><span>© 2026 Iman Bachat · طرابلس، لبنان · <a href="/ar/privacy" style="color:inherit">الخصوصية</a></span><span>أبني الموقع، ثم أبني النظام الذي يقف خلفه.</span></div>
+  </div>
+  <p class="foot-name" aria-hidden="true">Iman Bachat</p>
+</footer>
+
+<script>
+(function(){
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    document.documentElement.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rise').forEach(function(el){var b=el.getBoundingClientRect();if(b.top>innerHeight*0.92&&b.height<innerHeight*0.6){el.classList.add('pre');io.observe(el)}});
+  }
+  var D={
+    restaurant:{site:'بيت الشاورما',url:'shawarmahouse.com',h:'شاورما ساخنة، توصيل في طرابلس.',btn:'اطلب عبر واتساب',i:'2 شاورما و1 بطاطا إلى الميناء، قرب الصيدلية. الدفع نقدًا',o:'تمام! 2 شاورما + 1 بطاطا إلى الميناء، نقدًا. يصل خلال 30 دقيقة تقريبًا.',log:'تم التسجيل: 2× شاورما · الميناء · نقدًا'},
+    clinic:{site:'عيادة سمايل لطب الأسنان',url:'smiledental.com',h:'ابتسامة أجمل، تحجزها في دقيقة.',btn:'احجز عبر واتساب',i:'مرحبًا، هل يمكنني حجز موعد تنظيف مع د. نور هذا الخميس بعد الظهر؟',o:'الخميس الساعة 4:30 عصرًا متاح مع د. نور. هل أحجزه باسمك؟',log:'تم الحجز: تنظيف · الخميس 4:30 م'},
+    law:{site:'مكتب حداد للمحاماة',url:'haddadlaw.com',h:'استشارة قانونية واضحة من أول اتصال.',btn:'اسأل عبر واتساب',i:'مساء الخير، أحتاج استشارة بخصوص عقد إيجار. هل يمكنني مقابلة محامٍ؟',o:'بالتأكيد. هل يناسبك يوم الاثنين الساعة 11:00 في المكتب؟',log:'تم التسجيل: عقد إيجار · الاثنين 11:00'},
+    shop:{site:'روز بيوتي',url:'rosebeauty.shop',h:'وصل حديثًا: زيت الشفاه بالورد.',btn:'اطلب عبر واتساب',i:'هل ما زال زيت الشفاه بالورد متوفرًا؟ أريد 2، والتوصيل إلى جونية',o:'نعم، حجزت لك 2. التوصيل إلى جونية غدًا. Whish أم نقدًا؟',log:'تم الحجز: 2× زيت شفاه · جونية'}
+  };
+  var tick='<svg width="18" height="11" viewBox="0 0 18 11" role="img" aria-label="مقروءة"><path d="M1 6l3 3 6-7M7 9l1 1 7-8" fill="none" stroke="#53BDEB" stroke-width="1.6"></path></svg>';
+  var chips=document.querySelectorAll('.chip'),$=function(id){return document.getElementById(id)};
+  function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+  function show(k){var x=D[k];
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.k===k?'true':'false')});
+    $('d-site').textContent=x.site;$('d-url').textContent=x.url;$('d-head').textContent=x.h;$('d-btn').textContent=x.btn;$('d-name').textContent=x.site;
+    $('d-in').innerHTML=esc(x.i)+'<span class="wa__meta">21:04</span>';
+    $('d-out').innerHTML=esc(x.o)+'<span class="wa__meta">21:04 '+tick+'</span>';
+    $('d-log').textContent=x.log;
+    var L=$('logo-demo');L.classList.remove('run');void L.offsetWidth;L.classList.add('run');
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){show(c.dataset.k)})});
+})();
+</script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+function set(o){b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'أغلق القائمة':'افتح القائمة');n.classList.toggle('open',o)}
+b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true')});
+n.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.getAttribute('aria-expanded')==='true'){set(false);b.focus()}});
+document.addEventListener('click',function(e){if(!e.target.closest('.top'))set(false)});
+})();
+</script>
+</body>
+</html>
