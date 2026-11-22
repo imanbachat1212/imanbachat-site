@@ -391,6 +391,19 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
   .nav a:not(.btn)::after{display:none}
   .nav .btn{margin-top:8px;min-height:52px}
 }
+/* ===== hero demo shaped like the IB logo: rounded B halves ===== */
+.ib-page{border-radius:18px 120px 120px 18px / 18px 50% 50% 18px;padding-right:clamp(30px,3.4vw,48px)}
+.ib-page__body{border-radius:12px 100px 100px 12px / 12px 50% 50% 12px;padding-right:clamp(40px,4.4vw,64px)}
+.ib-chat{border-radius:18px 140px 140px 18px / 18px 50% 50% 18px}
+.ib-chat__head{background:transparent;border-radius:0;padding-right:clamp(48px,5vw,72px)}
+.ib-chat__body{padding-right:clamp(52px,5.4vw,76px)}
+.ib-switch{transition:background-color .3s}
+.run .ib-switch{animation:switchOn .5s ease .9s both}
+.run .ib-knob{animation:knobUp .8s var(--ease) .2s both,knobDark .5s ease .9s forwards}
+.ib-on{color:var(--ink)}
+@keyframes switchOn{from{background:var(--ink)}to{background:var(--lime)}}
+@keyframes knobDark{to{background:var(--ink)}}
+@media (prefers-reduced-motion:reduce){.ib-switch{background:var(--lime)}.ib-knob{background:var(--ink)}}
 .lang{font-weight:700!important;color:var(--ink)!important}
 </style>
 <script type="application/ld+json">
@@ -629,15 +642,7 @@ textarea.field{min-height:110px;padding:16px 18px;resize:vertical}
 <header class="c">
   <div class="top">
     <a class="mark" href="#top" aria-label="Iman Bachat, home">
-      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
-        <rect x="2" y="4" width="10" height="32" rx="5" fill="#0E1116"></rect>
-        <circle cx="7" cy="10" r="3.5" fill="#C6F432"></circle>
-        <rect x="15" y="4" width="22" height="14" rx="3" fill="#0E1116"></rect>
-        <rect x="18" y="7.5" width="12" height="2.2" rx="1.1" fill="#F4F3EF"></rect>
-        <rect x="18" y="12" width="8" height="3.2" rx="1.6" fill="#C6F432"></rect>
-        <path d="M19 21h15a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4H22l-5 4v-4.5A4 4 0 0 1 15 30v-5a4 4 0 0 1 4-4z" fill="#0E1116"></path>
-        <circle cx="22" cy="27.5" r="1.5" fill="#F4F3EF"></circle><circle cx="26.5" cy="27.5" r="1.5" fill="#F4F3EF"></circle><circle cx="31" cy="27.5" r="1.5" fill="#F4F3EF"></circle>
-      </svg>
+      <svg width="40" height="40" viewBox="0 0 720 720" aria-hidden="true"><rect width="720" height="720" rx="160" fill="#0E1116"/><rect x="150" y="170" width="102" height="345" rx="51" fill="#C6F432"/><circle cx="202" cy="226" r="34" fill="#0E1116"/><path d="M288 170H461A79 79 0 0 1 461 328H288Z" fill="#F4F3EF"/><rect x="322" y="205" width="104" height="19" rx="9.5" fill="#0E1116"/><rect x="322" y="240" width="68" height="19" rx="9.5" fill="#8A93A3"/><rect x="322" y="280" width="55" height="22" rx="11" fill="#9BC41A"/><path d="M288 350H488A82.5 82.5 0 0 1 488 515H345L265 550L288 480Z" fill="#F4F3EF"/><circle cx="348" cy="432" r="17" fill="#0E1116"/><circle cx="404" cy="432" r="17" fill="#0E1116"/><circle cx="460" cy="432" r="18" fill="#9BC41A"/></svg>
       <span><b>Iman</b> Bachat</span>
     </a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
