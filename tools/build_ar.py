@@ -100,8 +100,8 @@ FAQ = [
 # ------------------------------------------------------------------ homepage
 def build_index():
     s = open('index.html').read()
-    s = head_common(s, '', 'Iman Bachat — مواقع إلكترونية وذكاء اصطناعي على واتساب للأعمال الصغيرة',
-                    'مطوّرة مواقع في لبنان: مواقع تجلب لك العملاء، وذكاء اصطناعي على واتساب يردّ ويحجز ويسجّل كل طلب.')
+    s = head_common(s, '', 'Iman Bachat — مواقع إلكترونية ومساعد واتساب الذكي',
+                    'مطوّرة مواقع في طرابلس، لبنان: مواقع إلكترونية تجلب لك العملاء، ومساعد واتساب ذكي يردّ على زبائنك ويستقبل الحجوزات ويسجّل كل طلب تلقائيًا.')
     s = jsonld(s, [
         {"@type": "WebPage", "@id": "https://imanbachat.com/ar/#page", "url": "https://imanbachat.com/ar/",
          "name": "Iman Bachat — مواقع إلكترونية وذكاء اصطناعي على واتساب", "inLanguage": "ar",
@@ -267,7 +267,7 @@ def build_index():
 def build_pricing():
     s = open('pricing.html').read()
     s = head_common(s, 'pricing', 'حاسبة أسعار المواقع ومساعد واتساب الذكي — Iman Bachat',
-                    'تقدير فوري لسعر موقعك الإلكتروني أو مساعد واتساب الذكي أو كليهما. اختر الصفحات واللغات والإضافات لترى التكلفة والمدة.')
+                    'احصل على تقدير فوري لسعر موقعك الإلكتروني أو مساعد واتساب الذكي أو كليهما. اختر عدد الصفحات واللغات والإضافات لترى التكلفة ومدة التنفيذ مباشرة.')
     s = jsonld(s, [
         {"@type": "WebPage", "@id": "https://imanbachat.com/ar/pricing#page", "url": "https://imanbachat.com/ar/pricing",
          "name": "حاسبة أسعار المواقع ومساعد واتساب الذكي — Iman Bachat", "inLanguage": "ar",
@@ -334,8 +334,8 @@ def build_pricing():
 # ------------------------------------------------------------------ privacy
 def build_privacy():
     s = open('privacy.html').read()
-    s = head_common(s, 'privacy', 'سياسة الخصوصية — Iman Bachat',
-                    'كيف يتعامل موقع imanbachat.com مع بياناتك: لا ملفات تعريف ارتباط، ولا تتبّع، ولا إعلانات.')
+    s = head_common(s, 'privacy', 'سياسة الخصوصية وحماية البيانات — Iman Bachat',
+                    'كيف يتعامل موقع imanbachat.com مع بياناتك: لا ملفات تعريف ارتباط، ولا تتبّع، ولا إعلانات، وماذا يحدث عندما تحجز مكالمة أو تتواصل مع إيمان.')
     s = jsonld(s, [
         {"@type": "WebPage", "@id": "https://imanbachat.com/ar/privacy#page", "url": "https://imanbachat.com/ar/privacy",
          "name": "سياسة الخصوصية — Iman Bachat", "inLanguage": "ar", "isPartOf": {"@id": "https://imanbachat.com/#website"}},
@@ -343,7 +343,7 @@ def build_privacy():
             {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://imanbachat.com/ar/"},
             {"@type": "ListItem", "position": 2, "name": "سياسة الخصوصية", "item": "https://imanbachat.com/ar/privacy"}]},
     ])
-    s, n = re.subn(r'<main>.*?</main>', lambda m: '''<main>
+    s, n = re.subn(r'<main id="main">.*?</main>', lambda m: '''<main id="main">
 <h1>سياسة الخصوصية</h1>
 <p class="muted">آخر تحديث <time datetime="2026-11-21">21 نوفمبر 2026</time> · Iman Bachat</p>
 <p>هذا الموقع، imanbachat.com، يعود إلى Iman Bachat، مطوّرة مواقع في طرابلس، لبنان. إنه موقع بسيط لعرض الأعمال، ويجمع أقل قدر ممكن من البيانات.</p>
@@ -359,6 +359,7 @@ def build_privacy():
     assert n == 1
     s = rep(s, [
         ('<a class="back" href="/">', '<a class="back" href="/ar/">'),
+        ('>Skip to content</a>', '>انتقل إلى المحتوى</a>'),
         ('<nav aria-label="Main"><a href="/">Home</a><a href="/#about">About</a><a href="/pricing">Pricing</a><a href="/#book">Contact</a><a class="lang" href="/ar/privacy" lang="ar" hreflang="ar">عربي</a></nav>',
          '<nav aria-label="القائمة الرئيسية"><a href="/ar/">الرئيسية</a><a href="/ar/#about">من أنا</a><a href="/ar/pricing">الأسعار</a><a href="/ar/#book">تواصل</a><a class="lang" href="/privacy" lang="en" hreflang="en">EN</a></nav>'),
         ('<p>© 2026 Iman Bachat · Tripoli, Lebanon · <a href="https://www.instagram.com/imanbachatt" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/iman-bachat" target="_blank" rel="noopener">LinkedIn</a></p>',

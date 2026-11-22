@@ -49,6 +49,7 @@ h2{font-size:22px;letter-spacing:-0.02em;margin:36px 0 8px}
 .top nav a{color:#0E1116;font-weight:500;text-decoration:none}
 .top nav a:hover{text-decoration:underline}
 main{padding-top:24px}
+.skip{position:absolute;left:12px;top:-60px;background:#0E1116;color:#F4F3EF;padding:12px 18px;border-radius:999px;text-decoration:none;z-index:9}.skip:focus{top:12px}
 .foot{max-width:720px;margin:0 auto;padding:0 24px 48px;color:#4A5260;font-size:15px}
 </style>
 <script type="application/ld+json">
@@ -91,9 +92,10 @@ main{padding-top:24px}
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="top"><a class="back" href="/"><img src="/favicon.svg" width="36" height="36" alt=""><span><b>Iman</b> Bachat</span></a>
 <nav aria-label="Main"><a href="/">Home</a><a href="/#about">About</a><a href="/pricing">Pricing</a><a href="/#book">Contact</a><a class="lang" href="/ar/privacy" lang="ar" hreflang="ar">عربي</a></nav></header>
-<main>
+<main id="main">
 <h1>Privacy policy</h1>
 <p class="muted">Last updated <time datetime="2026-11-21">21 November 2026</time> · by Iman Bachat</p>
 <p>This site, imanbachat.com, belongs to Iman Bachat, a web developer in Tripoli, Lebanon. It's a simple portfolio, and it collects as little as possible.</p>
