@@ -14,7 +14,7 @@ RTL_CSS = """<style>
 @font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-sans-arabic-arabic-500-normal.woff2) format('woff2')}
 @font-face{font-family:'IBM Plex Sans Arabic';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/ibm-plex-sans-arabic-arabic-700-normal.woff2) format('woff2')}
 html[dir=rtl] body,html[dir=rtl] .btn,html[dir=rtl] .chip,html[dir=rtl] .field,html[dir=rtl] .opt,html[dir=rtl] button{font-family:'Space Grotesk','IBM Plex Sans Arabic',system-ui,sans-serif}
-html[dir=rtl] *:not(.foot-name):not(.mark):not(.mark *){letter-spacing:0!important}
+html[dir=rtl] *{letter-spacing:0!important}
 html[dir=rtl] [style*="JetBrains"]{font-family:'IBM Plex Sans Arabic',sans-serif!important;font-size:14px!important;font-weight:700}
 html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{line-height:1.3!important}
 html[dir=rtl] .skip{left:auto;right:12px}
@@ -30,6 +30,7 @@ html[dir=rtl] .opt{text-align:right}
 html[dir=rtl] .result__price{direction:ltr;text-align:right}
 html[dir=rtl] blockquote[lang=en]{direction:ltr;text-align:left}
 .lang{font-weight:700!important;color:var(--ink)!important}
+html[dir=rtl] .foot-name{line-height:1.3;padding:8px 0 32px;font-size:16vw}
 </style>
 """
 
@@ -365,10 +366,23 @@ def build_privacy():
     ], 'privacy')
     return s
 
+NAME_AR = 'إيمان باشات'
+def arabic_name(s):
+    # Her name in Arabic everywhere on the Arabic pages, except inside the
+    # clients' English testimonials.
+    keep = re.findall(r'<blockquote lang="en">.*?</blockquote>', s, re.S)
+    for i, k in enumerate(keep):
+        s = s.replace(k, f'@@KEEP{i}@@')
+    s = s.replace('<b>Iman</b> Bachat', f'<b>إيمان</b> باشات').replace('Iman Bachat', NAME_AR)
+    for i, k in enumerate(keep):
+        s = s.replace(f'@@KEEP{i}@@', k)
+    return s
+
 if __name__ == '__main__':
     os.makedirs('ar', exist_ok=True)
     for name, fn in [('index.html', build_index), ('pricing.html', build_pricing), ('privacy.html', build_privacy)]:
         out = fn()
+        out = arabic_name(out)
         for b in re.findall(r'<script type="application/ld\+json">(.*?)</script>', out, re.S):
             json.loads(b)
         open(os.path.join('ar', name), 'w').write(out)
